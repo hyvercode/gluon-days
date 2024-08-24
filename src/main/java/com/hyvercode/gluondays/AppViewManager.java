@@ -34,8 +34,8 @@ public class AppViewManager {
             view.registerView();
         }
 
-        NavigationDrawer.Header header = new NavigationDrawer.Header("Gluon Application",
-                "My Gluon Application Days",
+        NavigationDrawer.Header header = new NavigationDrawer.Header("De'Holiday",
+                "Welcome Hyvercode",
                 new Avatar(21, new Image(AppViewManager.class.getResourceAsStream("/icon.png"))));
 
         Utils.buildDrawer(AppManager.getInstance().getDrawer(), header, REGISTRY.getViews());

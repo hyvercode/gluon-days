@@ -1,6 +1,0 @@
-[HEADER]
-com.hyvercode.gluondays.main.h
-graal_isolate.h
-com.hyvercode.gluondays.main_dynamic.h
-graal_isolate_dynamic.h
-
