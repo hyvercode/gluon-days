@@ -1,0 +1,1266 @@
+[Wed Aug 21 22:45:16 WIB 2024][INFO] ==================== LINK TASK ====================
+[Wed Aug 21 22:45:16 WIB 2024][FINE] Looking for resource: /native/android/c/dummy.c
+[Wed Aug 21 22:45:16 WIB 2024][FINE] Looking for resource: /native/android/c/launcher.c
+[Wed Aug 21 22:45:16 WIB 2024][FINE] Looking for resource: /native/android/c/javafx_adapter.c
+[Wed Aug 21 22:45:16 WIB 2024][FINE] Looking for resource: /native/android/c/touch_events.c
+[Wed Aug 21 22:45:16 WIB 2024][FINE] Looking for resource: /native/android/c/glibc_shim.c
+[Wed Aug 21 22:45:16 WIB 2024][FINE] Looking for resource: /native/android/c/attach_adapter.c
+[Wed Aug 21 22:45:16 WIB 2024][FINE] Looking for resource: /native/android/c/logger.c
+[Wed Aug 21 22:45:16 WIB 2024][FINE] Looking for resource: /native/android/c/grandroid.h
+[Wed Aug 21 22:45:16 WIB 2024][FINE] Looking for resource: /native/android/c/grandroid_ext.h
+[Wed Aug 21 22:45:16 WIB 2024][FINE] PB Command for compile-additional-sources: /home/user/.gluon/substrate/Android/ndk/25.2.9519653/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -c -DSUBSTRATE -target aarch64-linux-android -I. -fPIC -DGVM_17 -I/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days dummy.c launcher.c javafx_adapter.c touch_events.c glibc_shim.c attach_adapter.c logger.c
+[Wed Aug 21 22:45:16 WIB 2024][FINE] Start process compile-additional-sources...
+[Wed Aug 21 22:45:17 WIB 2024][FINE] [SUB] launcher.c:49:12: warning: 'extern' variable has an initializer [-Wextern-initializer]
+[Wed Aug 21 22:45:17 WIB 2024][FINE] [SUB] extern int __svm_vm_is_static_binary __attribute__((weak)) = 1;
+[Wed Aug 21 22:45:17 WIB 2024][FINE] [SUB]            ^
+[Wed Aug 21 22:45:17 WIB 2024][FINE] [SUB] 1 warning generated.
+[Wed Aug 21 22:45:17 WIB 2024][FINE] [SUB] javafx_adapter.c:119:5: warning: incompatible pointer types passing 'void **' to parameter of type 'JNIEnv **' (aka 'const struct JNINativeInterface ***') [-Wincompatible-pointer-types]
+[Wed Aug 21 22:45:17 WIB 2024][FINE] [SUB]     ATTACH_DALVIK();
+[Wed Aug 21 22:45:17 WIB 2024][FINE] [SUB]     ^~~~~~~~~~~~~~~
+[Wed Aug 21 22:45:17 WIB 2024][FINE] [SUB] ./grandroid_ext.h:81:56: note: expanded from macro 'ATTACH_DALVIK'
+[Wed Aug 21 22:45:17 WIB 2024][FINE] [SUB]     (*dalvikVM)->AttachCurrentThreadAsDaemon(dalvikVM, (void **) &dalvikEnv, NULL); \
+[Wed Aug 21 22:45:17 WIB 2024][FINE] [SUB]                                                        ^~~~~~~~~~~~~~~~~~~~
+[Wed Aug 21 22:45:17 WIB 2024][FINE] [SUB] javafx_adapter.c:140:5: warning: incompatible pointer types passing 'void **' to parameter of type 'JNIEnv **' (aka 'const struct JNINativeInterface ***') [-Wincompatible-pointer-types]
+[Wed Aug 21 22:45:17 WIB 2024][FINE] [SUB]     ATTACH_DALVIK();
+[Wed Aug 21 22:45:17 WIB 2024][FINE] [SUB]     ^~~~~~~~~~~~~~~
+[Wed Aug 21 22:45:17 WIB 2024][FINE] [SUB] ./grandroid_ext.h:81:56: note: expanded from macro 'ATTACH_DALVIK'
+[Wed Aug 21 22:45:17 WIB 2024][FINE] [SUB]     (*dalvikVM)->AttachCurrentThreadAsDaemon(dalvikVM, (void **) &dalvikEnv, NULL); \
+[Wed Aug 21 22:45:17 WIB 2024][FINE] [SUB]                                                        ^~~~~~~~~~~~~~~~~~~~
+[Wed Aug 21 22:45:17 WIB 2024][FINE] [SUB] 2 warnings generated.
+[Wed Aug 21 22:45:17 WIB 2024][FINE] Result for compile-additional-sources: 0
+[Wed Aug 21 22:45:17 WIB 2024][FINE] Processing zip file: url = https://download2.gluonhq.com/substrate/clibs/android-aarch64-ea+27.zip, zip = /usr/lib/jvm/graalvm-svm-java17-linux-gluon-22.1.0.1-Final/lib/svm/clibraries.zip, subDir = clibraries, levels = [27, android-aarch64], md5 = clibraries-android-aarch64.md5
+[Wed Aug 21 22:45:22 WIB 2024][FINE] PB Command for link: /home/user/.gluon/substrate/Android/ndk/25.2.9519653/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/dummy.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/launcher.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/javafx_adapter.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/touch_events.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/glibc_shim.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/attach_adapter.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/logger.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/tmp/SVM-1724254347473/com.hyvercode.gluondays.main.o -ljava -lnio -lzip -lnet -lprefs -ljvm -lfdlibm -lz -ldl -lj2pkcs11 -ljaas -lextnet -target aarch64-linux-android21 -fPIC -Wl,--rosegment,--gc-sections,-z,noexecstack -shared -landroid -llog -lffi -llibchelper -static-libstdc++ -Wl,--whole-archive -lprism_es2_monocle -lglass_monocle -ljavafx_font_freetype -ljavafx_iio -Wl,--no-whole-archive -lGLESv2 -lEGL -lfreetype -o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/libMy Gluon Application Days.so -L/home/user/.gluon/substrate/javafxStaticSdk/21-ea+11.1/android-aarch64/sdk/lib -L/usr/lib/jvm/graalvm-svm-java17-linux-gluon-22.1.0.1-Final/lib/svm/clibraries/27/android-aarch64 -L/home/user/.gluon/substrate/javaStaticSdk/18-ea+prep18-9/android-aarch64/staticjdk/lib/static -L/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib -Wl,--whole-archive /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib/libdisplay.a /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib/liblifecycle.a /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib/libstatusbar.a /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib/libstorage.a /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib/libutil.a -Wl,--no-whole-archive
+[Wed Aug 21 22:45:22 WIB 2024][FINE] Start process link...
+[Wed Aug 21 22:45:24 WIB 2024][FINE] Result for link: 0
+[Wed Aug 21 22:45:24 WIB 2024][FINE] Logging process [link] to file: /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/log/process-link-1724255124076.log
+[Wed Aug 21 23:00:50 WIB 2024][INFO] ==================== LINK TASK ====================
+[Wed Aug 21 23:00:50 WIB 2024][FINE] Looking for resource: /native/android/c/dummy.c
+[Wed Aug 21 23:00:50 WIB 2024][FINE] Looking for resource: /native/android/c/launcher.c
+[Wed Aug 21 23:00:50 WIB 2024][FINE] Looking for resource: /native/android/c/javafx_adapter.c
+[Wed Aug 21 23:00:50 WIB 2024][FINE] Looking for resource: /native/android/c/touch_events.c
+[Wed Aug 21 23:00:50 WIB 2024][FINE] Looking for resource: /native/android/c/glibc_shim.c
+[Wed Aug 21 23:00:50 WIB 2024][FINE] Looking for resource: /native/android/c/attach_adapter.c
+[Wed Aug 21 23:00:50 WIB 2024][FINE] Looking for resource: /native/android/c/logger.c
+[Wed Aug 21 23:00:50 WIB 2024][FINE] Looking for resource: /native/android/c/grandroid.h
+[Wed Aug 21 23:00:50 WIB 2024][FINE] Looking for resource: /native/android/c/grandroid_ext.h
+[Wed Aug 21 23:00:50 WIB 2024][FINE] PB Command for compile-additional-sources: /home/user/.gluon/substrate/Android/ndk/25.2.9519653/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -c -DSUBSTRATE -target aarch64-linux-android -I. -fPIC -DGVM_17 -I/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days dummy.c launcher.c javafx_adapter.c touch_events.c glibc_shim.c attach_adapter.c logger.c
+[Wed Aug 21 23:00:50 WIB 2024][FINE] Start process compile-additional-sources...
+[Wed Aug 21 23:00:50 WIB 2024][FINE] [SUB] launcher.c:49:12: warning: 'extern' variable has an initializer [-Wextern-initializer]
+[Wed Aug 21 23:00:50 WIB 2024][FINE] [SUB] extern int __svm_vm_is_static_binary __attribute__((weak)) = 1;
+[Wed Aug 21 23:00:50 WIB 2024][FINE] [SUB]            ^
+[Wed Aug 21 23:00:50 WIB 2024][FINE] [SUB] 1 warning generated.
+[Wed Aug 21 23:00:50 WIB 2024][FINE] [SUB] javafx_adapter.c:119:5: warning: incompatible pointer types passing 'void **' to parameter of type 'JNIEnv **' (aka 'const struct JNINativeInterface ***') [-Wincompatible-pointer-types]
+[Wed Aug 21 23:00:50 WIB 2024][FINE] [SUB]     ATTACH_DALVIK();
+[Wed Aug 21 23:00:50 WIB 2024][FINE] [SUB]     ^~~~~~~~~~~~~~~
+[Wed Aug 21 23:00:50 WIB 2024][FINE] [SUB] ./grandroid_ext.h:81:56: note: expanded from macro 'ATTACH_DALVIK'
+[Wed Aug 21 23:00:50 WIB 2024][FINE] [SUB]     (*dalvikVM)->AttachCurrentThreadAsDaemon(dalvikVM, (void **) &dalvikEnv, NULL); \
+[Wed Aug 21 23:00:50 WIB 2024][FINE] [SUB]                                                        ^~~~~~~~~~~~~~~~~~~~
+[Wed Aug 21 23:00:50 WIB 2024][FINE] [SUB] javafx_adapter.c:140:5: warning: incompatible pointer types passing 'void **' to parameter of type 'JNIEnv **' (aka 'const struct JNINativeInterface ***') [-Wincompatible-pointer-types]
+[Wed Aug 21 23:00:50 WIB 2024][FINE] [SUB]     ATTACH_DALVIK();
+[Wed Aug 21 23:00:50 WIB 2024][FINE] [SUB]     ^~~~~~~~~~~~~~~
+[Wed Aug 21 23:00:50 WIB 2024][FINE] [SUB] ./grandroid_ext.h:81:56: note: expanded from macro 'ATTACH_DALVIK'
+[Wed Aug 21 23:00:50 WIB 2024][FINE] [SUB]     (*dalvikVM)->AttachCurrentThreadAsDaemon(dalvikVM, (void **) &dalvikEnv, NULL); \
+[Wed Aug 21 23:00:50 WIB 2024][FINE] [SUB]                                                        ^~~~~~~~~~~~~~~~~~~~
+[Wed Aug 21 23:00:50 WIB 2024][FINE] [SUB] 2 warnings generated.
+[Wed Aug 21 23:00:50 WIB 2024][FINE] Result for compile-additional-sources: 0
+[Wed Aug 21 23:00:50 WIB 2024][FINE] PB Command for link: /home/user/.gluon/substrate/Android/ndk/25.2.9519653/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/dummy.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/launcher.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/javafx_adapter.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/touch_events.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/glibc_shim.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/attach_adapter.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/logger.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/tmp/SVM-1724255375841/com.hyvercode.gluondays.main.o -ljava -lnio -lzip -lnet -lprefs -ljvm -lfdlibm -lz -ldl -lj2pkcs11 -ljaas -lextnet -target aarch64-linux-android21 -fPIC -Wl,--rosegment,--gc-sections,-z,noexecstack -shared -landroid -llog -lffi -llibchelper -static-libstdc++ -Wl,--whole-archive -lprism_es2_monocle -lglass_monocle -ljavafx_font_freetype -ljavafx_iio -Wl,--no-whole-archive -lGLESv2 -lEGL -lfreetype -o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/libMy Gluon Application Days.so -L/home/user/.gluon/substrate/javafxStaticSdk/21-ea+11.1/android-aarch64/sdk/lib -L/usr/lib/jvm/graalvm-svm-java17-linux-gluon-22.1.0.1-Final/lib/svm/clibraries/27/android-aarch64 -L/home/user/.gluon/substrate/javaStaticSdk/18-ea+prep18-9/android-aarch64/staticjdk/lib/static -L/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib -Wl,--whole-archive /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib/libdisplay.a /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib/liblifecycle.a /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib/libstatusbar.a /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib/libstorage.a /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib/libutil.a -Wl,--no-whole-archive
+[Wed Aug 21 23:00:50 WIB 2024][FINE] Start process link...
+[Wed Aug 21 23:00:51 WIB 2024][FINE] Result for link: 0
+[Wed Aug 21 23:00:51 WIB 2024][FINE] Logging process [link] to file: /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/log/process-link-1724256051700.log
+[Thu Aug 22 20:47:36 WIB 2024][INFO] ==================== LINK TASK ====================
+[Thu Aug 22 20:47:36 WIB 2024][FINE] Looking for resource: /native/android/c/dummy.c
+[Thu Aug 22 20:47:36 WIB 2024][FINE] Looking for resource: /native/android/c/launcher.c
+[Thu Aug 22 20:47:36 WIB 2024][FINE] Looking for resource: /native/android/c/javafx_adapter.c
+[Thu Aug 22 20:47:36 WIB 2024][FINE] Looking for resource: /native/android/c/touch_events.c
+[Thu Aug 22 20:47:36 WIB 2024][FINE] Looking for resource: /native/android/c/glibc_shim.c
+[Thu Aug 22 20:47:36 WIB 2024][FINE] Looking for resource: /native/android/c/attach_adapter.c
+[Thu Aug 22 20:47:36 WIB 2024][FINE] Looking for resource: /native/android/c/logger.c
+[Thu Aug 22 20:47:36 WIB 2024][FINE] Looking for resource: /native/android/c/grandroid.h
+[Thu Aug 22 20:47:36 WIB 2024][FINE] Looking for resource: /native/android/c/grandroid_ext.h
+[Thu Aug 22 20:47:36 WIB 2024][FINE] PB Command for compile-additional-sources: /home/user/Android/Ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -c -DSUBSTRATE -target aarch64-linux-android -I. -fPIC -DGVM_17 -I/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days dummy.c launcher.c javafx_adapter.c touch_events.c glibc_shim.c attach_adapter.c logger.c
+[Thu Aug 22 20:47:36 WIB 2024][FINE] Start process compile-additional-sources...
+[Thu Aug 22 20:47:37 WIB 2024][FINE] [SUB] launcher.c:49:12: warning: 'extern' variable has an initializer [-Wextern-initializer]
+[Thu Aug 22 20:47:37 WIB 2024][FINE] [SUB]    49 | extern int __svm_vm_is_static_binary __attribute__((weak)) = 1;
+[Thu Aug 22 20:47:37 WIB 2024][FINE] [SUB]       |            ^
+[Thu Aug 22 20:47:37 WIB 2024][FINE] [SUB] 1 warning generated.
+[Thu Aug 22 20:47:37 WIB 2024][FINE] [SUB] javafx_adapter.c:119:5: warning: incompatible pointer types passing 'void **' to parameter of type 'JNIEnv **' (aka 'const struct JNINativeInterface ***') [-Wincompatible-pointer-types]
+[Thu Aug 22 20:47:37 WIB 2024][FINE] [SUB]   119 |     ATTACH_DALVIK();
+[Thu Aug 22 20:47:37 WIB 2024][FINE] [SUB]       |     ^~~~~~~~~~~~~~~
+[Thu Aug 22 20:47:37 WIB 2024][FINE] [SUB] ./grandroid_ext.h:81:56: note: expanded from macro 'ATTACH_DALVIK'
+[Thu Aug 22 20:47:37 WIB 2024][FINE] [SUB]    81 |     (*dalvikVM)->AttachCurrentThreadAsDaemon(dalvikVM, (void **) &dalvikEnv, NULL); \
+[Thu Aug 22 20:47:37 WIB 2024][FINE] [SUB]       |                                                        ^~~~~~~~~~~~~~~~~~~~
+[Thu Aug 22 20:47:37 WIB 2024][FINE] [SUB] javafx_adapter.c:140:5: warning: incompatible pointer types passing 'void **' to parameter of type 'JNIEnv **' (aka 'const struct JNINativeInterface ***') [-Wincompatible-pointer-types]
+[Thu Aug 22 20:47:37 WIB 2024][FINE] [SUB]   140 |     ATTACH_DALVIK();
+[Thu Aug 22 20:47:37 WIB 2024][FINE] [SUB]       |     ^~~~~~~~~~~~~~~
+[Thu Aug 22 20:47:37 WIB 2024][FINE] [SUB] ./grandroid_ext.h:81:56: note: expanded from macro 'ATTACH_DALVIK'
+[Thu Aug 22 20:47:37 WIB 2024][FINE] [SUB]    81 |     (*dalvikVM)->AttachCurrentThreadAsDaemon(dalvikVM, (void **) &dalvikEnv, NULL); \
+[Thu Aug 22 20:47:37 WIB 2024][FINE] [SUB]       |                                                        ^~~~~~~~~~~~~~~~~~~~
+[Thu Aug 22 20:47:37 WIB 2024][FINE] [SUB] 2 warnings generated.
+[Thu Aug 22 20:47:37 WIB 2024][FINE] Result for compile-additional-sources: 0
+[Thu Aug 22 20:47:37 WIB 2024][FINE] PB Command for link: /home/user/Android/Ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/dummy.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/launcher.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/javafx_adapter.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/touch_events.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/glibc_shim.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/attach_adapter.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/logger.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/tmp/SVM-1724333886966/com.hyvercode.gluondays.main.o -ljava -lnio -lzip -lnet -lprefs -ljvm -lfdlibm -lz -ldl -lj2pkcs11 -ljaas -lextnet -target aarch64-linux-android21 -fPIC -Wl,--rosegment,--gc-sections,-z,noexecstack -shared -landroid -llog -lffi -llibchelper -static-libstdc++ -Wl,--whole-archive -lprism_es2_monocle -lglass_monocle -ljavafx_font_freetype -ljavafx_iio -Wl,--no-whole-archive -lGLESv2 -lEGL -lfreetype -o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/libMy Gluon Application Days.so -L/home/user/.gluon/substrate/javafxStaticSdk/21-ea+11.1/android-aarch64/sdk/lib -L/usr/lib/jvm/graalvm-svm-java17-linux-gluon-22.1.0.1-Final/lib/svm/clibraries/27/android-aarch64 -L/home/user/.gluon/substrate/javaStaticSdk/18-ea+prep18-9/android-aarch64/staticjdk/lib/static -L/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib -Wl,--whole-archive /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib/libdisplay.a /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib/liblifecycle.a /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib/libstatusbar.a /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib/libstorage.a /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib/libutil.a -Wl,--no-whole-archive
+[Thu Aug 22 20:47:37 WIB 2024][FINE] Start process link...
+[Thu Aug 22 20:47:39 WIB 2024][FINE] Result for link: 0
+[Thu Aug 22 20:47:39 WIB 2024][FINE] Logging process [link] to file: /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/log/process-link-1724334459140.log
+[Thu Aug 22 21:03:23 WIB 2024][INFO] ==================== LINK TASK ====================
+[Thu Aug 22 21:03:23 WIB 2024][FINE] Looking for resource: /native/android/c/dummy.c
+[Thu Aug 22 21:03:23 WIB 2024][FINE] Looking for resource: /native/android/c/launcher.c
+[Thu Aug 22 21:03:23 WIB 2024][FINE] Looking for resource: /native/android/c/javafx_adapter.c
+[Thu Aug 22 21:03:23 WIB 2024][FINE] Looking for resource: /native/android/c/touch_events.c
+[Thu Aug 22 21:03:23 WIB 2024][FINE] Looking for resource: /native/android/c/glibc_shim.c
+[Thu Aug 22 21:03:23 WIB 2024][FINE] Looking for resource: /native/android/c/attach_adapter.c
+[Thu Aug 22 21:03:23 WIB 2024][FINE] Looking for resource: /native/android/c/logger.c
+[Thu Aug 22 21:03:23 WIB 2024][FINE] Looking for resource: /native/android/c/grandroid.h
+[Thu Aug 22 21:03:23 WIB 2024][FINE] Looking for resource: /native/android/c/grandroid_ext.h
+[Thu Aug 22 21:03:23 WIB 2024][FINE] PB Command for compile-additional-sources: /home/user/Android/Ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -c -DSUBSTRATE -target aarch64-linux-android -I. -fPIC -DGVM_17 -I/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days dummy.c launcher.c javafx_adapter.c touch_events.c glibc_shim.c attach_adapter.c logger.c
+[Thu Aug 22 21:03:23 WIB 2024][FINE] Start process compile-additional-sources...
+[Thu Aug 22 21:03:23 WIB 2024][FINE] [SUB] launcher.c:49:12: warning: 'extern' variable has an initializer [-Wextern-initializer]
+[Thu Aug 22 21:03:23 WIB 2024][FINE] [SUB]    49 | extern int __svm_vm_is_static_binary __attribute__((weak)) = 1;
+[Thu Aug 22 21:03:23 WIB 2024][FINE] [SUB]       |            ^
+[Thu Aug 22 21:03:23 WIB 2024][FINE] [SUB] 1 warning generated.
+[Thu Aug 22 21:03:23 WIB 2024][FINE] [SUB] javafx_adapter.c:119:5: warning: incompatible pointer types passing 'void **' to parameter of type 'JNIEnv **' (aka 'const struct JNINativeInterface ***') [-Wincompatible-pointer-types]
+[Thu Aug 22 21:03:23 WIB 2024][FINE] [SUB]   119 |     ATTACH_DALVIK();
+[Thu Aug 22 21:03:23 WIB 2024][FINE] [SUB]       |     ^~~~~~~~~~~~~~~
+[Thu Aug 22 21:03:23 WIB 2024][FINE] [SUB] ./grandroid_ext.h:81:56: note: expanded from macro 'ATTACH_DALVIK'
+[Thu Aug 22 21:03:23 WIB 2024][FINE] [SUB]    81 |     (*dalvikVM)->AttachCurrentThreadAsDaemon(dalvikVM, (void **) &dalvikEnv, NULL); \
+[Thu Aug 22 21:03:23 WIB 2024][FINE] [SUB]       |                                                        ^~~~~~~~~~~~~~~~~~~~
+[Thu Aug 22 21:03:23 WIB 2024][FINE] [SUB] javafx_adapter.c:140:5: warning: incompatible pointer types passing 'void **' to parameter of type 'JNIEnv **' (aka 'const struct JNINativeInterface ***') [-Wincompatible-pointer-types]
+[Thu Aug 22 21:03:23 WIB 2024][FINE] [SUB]   140 |     ATTACH_DALVIK();
+[Thu Aug 22 21:03:23 WIB 2024][FINE] [SUB]       |     ^~~~~~~~~~~~~~~
+[Thu Aug 22 21:03:23 WIB 2024][FINE] [SUB] ./grandroid_ext.h:81:56: note: expanded from macro 'ATTACH_DALVIK'
+[Thu Aug 22 21:03:23 WIB 2024][FINE] [SUB]    81 |     (*dalvikVM)->AttachCurrentThreadAsDaemon(dalvikVM, (void **) &dalvikEnv, NULL); \
+[Thu Aug 22 21:03:23 WIB 2024][FINE] [SUB]       |                                                        ^~~~~~~~~~~~~~~~~~~~
+[Thu Aug 22 21:03:23 WIB 2024][FINE] [SUB] 2 warnings generated.
+[Thu Aug 22 21:03:23 WIB 2024][FINE] Result for compile-additional-sources: 0
+[Thu Aug 22 21:03:23 WIB 2024][FINE] PB Command for link: /home/user/Android/Ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/dummy.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/launcher.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/javafx_adapter.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/touch_events.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/glibc_shim.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/attach_adapter.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/logger.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/tmp/SVM-1724334554434/com.hyvercode.gluondays.main.o -ljava -lnio -lzip -lnet -lprefs -ljvm -lfdlibm -lz -ldl -lj2pkcs11 -ljaas -lextnet -target aarch64-linux-android21 -fPIC -Wl,--rosegment,--gc-sections,-z,noexecstack -shared -landroid -llog -lffi -llibchelper -static-libstdc++ -Wl,--whole-archive -lprism_es2_monocle -lglass_monocle -ljavafx_font_freetype -ljavafx_iio -Wl,--no-whole-archive -lGLESv2 -lEGL -lfreetype -o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/libMy Gluon Application Days.so -L/home/user/.gluon/substrate/javafxStaticSdk/21-ea+11.1/android-aarch64/sdk/lib -L/usr/lib/jvm/graalvm-svm-java17-linux-gluon-22.1.0.1-Final/lib/svm/clibraries/27/android-aarch64 -L/home/user/.gluon/substrate/javaStaticSdk/18-ea+prep18-9/android-aarch64/staticjdk/lib/static -L/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib -Wl,--whole-archive /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib/libdisplay.a /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib/liblifecycle.a /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib/libstatusbar.a /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib/libstorage.a /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib/libutil.a -Wl,--no-whole-archive
+[Thu Aug 22 21:03:23 WIB 2024][FINE] Start process link...
+[Thu Aug 22 21:03:25 WIB 2024][FINE] Result for link: 0
+[Thu Aug 22 21:03:25 WIB 2024][FINE] Logging process [link] to file: /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/log/process-link-1724335405136.log
+[Thu Aug 22 22:30:19 WIB 2024][INFO] ==================== INSTALL TASK ====================
+[Thu Aug 22 22:30:19 WIB 2024][FINE] PB Command for install-task: /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/android_project/gradlew -p /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/android_project installDebug
+[Thu Aug 22 22:30:19 WIB 2024][FINE] Start process install-task...
+[Thu Aug 22 22:30:21 WIB 2024][FINE] [SUB] To honour the JVM settings for this build a single-use Daemon process will be forked. See https://docs.gradle.org/7.5/userguide/gradle_daemon.html#sec:disabling_the_daemon.
+[Thu Aug 22 22:30:28 WIB 2024][FINE] [SUB] Daemon will be stopped at the end of the build 
+[Thu Aug 22 22:30:54 WIB 2024][FINE] [SUB] Warning: This version only understands SDK XML versions up to 3 but an SDK XML file of version 4 was encountered. This can happen if you use versions of Android Studio and the command-line tools that were released at different times.
+[Thu Aug 22 22:30:56 WIB 2024][FINE] [SUB] > Task :app:preBuild UP-TO-DATE
+[Thu Aug 22 22:30:56 WIB 2024][FINE] [SUB] > Task :app:preDebugBuild UP-TO-DATE
+[Thu Aug 22 22:30:56 WIB 2024][FINE] [SUB] > Task :app:compileDebugAidl NO-SOURCE
+[Thu Aug 22 22:30:56 WIB 2024][FINE] [SUB] > Task :app:compileDebugRenderscript NO-SOURCE
+[Thu Aug 22 22:30:56 WIB 2024][FINE] [SUB] > Task :app:generateDebugBuildConfig UP-TO-DATE
+[Thu Aug 22 22:30:56 WIB 2024][FINE] [SUB] > Task :app:javaPreCompileDebug UP-TO-DATE
+[Thu Aug 22 22:30:57 WIB 2024][FINE] [SUB] > Task :app:checkDebugAarMetadata UP-TO-DATE
+[Thu Aug 22 22:30:57 WIB 2024][FINE] [SUB] > Task :app:generateDebugResValues UP-TO-DATE
+[Thu Aug 22 22:30:57 WIB 2024][FINE] [SUB] > Task :app:mapDebugSourceSetPaths UP-TO-DATE
+[Thu Aug 22 22:30:57 WIB 2024][FINE] [SUB] > Task :app:generateDebugResources UP-TO-DATE
+[Thu Aug 22 22:30:58 WIB 2024][FINE] [SUB] > Task :app:mergeDebugResources UP-TO-DATE
+[Thu Aug 22 22:30:58 WIB 2024][FINE] [SUB] > Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+[Thu Aug 22 22:30:58 WIB 2024][FINE] [SUB] > Task :app:extractDeepLinksDebug UP-TO-DATE
+[Thu Aug 22 22:30:58 WIB 2024][FINE] [SUB] > Task :app:processDebugMainManifest UP-TO-DATE
+[Thu Aug 22 22:30:58 WIB 2024][FINE] [SUB] > Task :app:processDebugManifest UP-TO-DATE
+[Thu Aug 22 22:30:58 WIB 2024][FINE] [SUB] > Task :app:processDebugManifestForPackage UP-TO-DATE
+[Thu Aug 22 22:30:59 WIB 2024][FINE] [SUB] > Task :app:processDebugResources UP-TO-DATE
+[Thu Aug 22 22:30:59 WIB 2024][FINE] [SUB] > Task :app:compileDebugJavaWithJavac UP-TO-DATE
+[Thu Aug 22 22:30:59 WIB 2024][FINE] [SUB] > Task :app:mergeDebugShaders UP-TO-DATE
+[Thu Aug 22 22:30:59 WIB 2024][FINE] [SUB] > Task :app:compileDebugShaders NO-SOURCE
+[Thu Aug 22 22:30:59 WIB 2024][FINE] [SUB] > Task :app:generateDebugAssets UP-TO-DATE
+[Thu Aug 22 22:30:59 WIB 2024][FINE] [SUB] > Task :app:mergeDebugAssets UP-TO-DATE
+[Thu Aug 22 22:30:59 WIB 2024][FINE] [SUB] > Task :app:compressDebugAssets UP-TO-DATE
+[Thu Aug 22 22:30:59 WIB 2024][FINE] [SUB] > Task :app:processDebugJavaRes NO-SOURCE
+[Thu Aug 22 22:30:59 WIB 2024][FINE] [SUB] > Task :app:mergeDebugJavaResource UP-TO-DATE
+[Thu Aug 22 22:31:00 WIB 2024][FINE] [SUB] > Task :app:checkDebugDuplicateClasses UP-TO-DATE
+[Thu Aug 22 22:31:00 WIB 2024][FINE] [SUB] > Task :app:desugarDebugFileDependencies UP-TO-DATE
+[Thu Aug 22 22:31:01 WIB 2024][FINE] [SUB] > Task :app:mergeExtDexDebug UP-TO-DATE
+[Thu Aug 22 22:31:01 WIB 2024][FINE] [SUB] > Task :app:mergeLibDexDebug UP-TO-DATE
+[Thu Aug 22 22:31:01 WIB 2024][FINE] [SUB] > Task :app:dexBuilderDebug UP-TO-DATE
+[Thu Aug 22 22:31:01 WIB 2024][FINE] [SUB] > Task :app:mergeProjectDexDebug UP-TO-DATE
+[Thu Aug 22 22:31:01 WIB 2024][FINE] [SUB] > Task :app:mergeDebugJniLibFolders UP-TO-DATE
+[Thu Aug 22 22:31:01 WIB 2024][FINE] [SUB] > Task :app:mergeDebugNativeLibs UP-TO-DATE
+[Thu Aug 22 22:31:01 WIB 2024][FINE] [SUB] > Task :app:stripDebugDebugSymbols UP-TO-DATE
+[Thu Aug 22 22:31:01 WIB 2024][FINE] [SUB] > Task :app:validateSigningDebug UP-TO-DATE
+[Thu Aug 22 22:31:01 WIB 2024][FINE] [SUB] > Task :app:writeDebugAppMetadata UP-TO-DATE
+[Thu Aug 22 22:31:01 WIB 2024][FINE] [SUB] > Task :app:writeDebugSigningConfigVersions UP-TO-DATE
+[Thu Aug 22 22:31:01 WIB 2024][FINE] [SUB] > Task :app:packageDebug UP-TO-DATE
+[Thu Aug 22 22:31:01 WIB 2024][FINE] [SUB] > Task :app:createDebugApkListingFileRedirect UP-TO-DATE
+[Thu Aug 22 22:31:03 WIB 2024][FINE] [SUB] 
+[Thu Aug 22 22:31:03 WIB 2024][FINE] [SUB] > Task :app:installDebug
+[Thu Aug 22 22:31:03 WIB 2024][FINE] [SUB] [adb]: * daemon not running; starting now at tcp:5037
+[Thu Aug 22 22:31:04 WIB 2024][FINE] [SUB] [adb]: * daemon started successfully
+[Thu Aug 22 22:31:05 WIB 2024][FINE] [SUB] Skipping device '1905fcfc' (1905fcfc): Device is null.
+[Thu Aug 22 22:31:05 WIB 2024][FINE] [SUB] 
+[Thu Aug 22 22:31:05 WIB 2024][FINE] [SUB] > Task :app:installDebug FAILED
+[Thu Aug 22 22:31:06 WIB 2024][FINE] [SUB] 
+[Thu Aug 22 22:31:06 WIB 2024][FINE] [SUB] FAILURE: Build failed with an exception.
+[Thu Aug 22 22:31:06 WIB 2024][FINE] [SUB] 
+[Thu Aug 22 22:31:06 WIB 2024][FINE] [SUB] * What went wrong:
+[Thu Aug 22 22:31:06 WIB 2024][FINE] [SUB] Execution failed for task ':app:installDebug'.
+[Thu Aug 22 22:31:06 WIB 2024][FINE] [SUB] > com.android.builder.testing.api.DeviceException: No online devices found.
+[Thu Aug 22 22:31:06 WIB 2024][FINE] [SUB] 
+[Thu Aug 22 22:31:06 WIB 2024][FINE] [SUB] * Try:
+[Thu Aug 22 22:31:06 WIB 2024][FINE] [SUB] > Run with --stacktrace option to get the stack trace.
+[Thu Aug 22 22:31:06 WIB 2024][FINE] [SUB] > Run with --info or --debug option to get more log output.
+[Thu Aug 22 22:31:06 WIB 2024][FINE] [SUB] > Run with --scan to get full insights.
+[Thu Aug 22 22:31:06 WIB 2024][FINE] [SUB] 
+[Thu Aug 22 22:31:06 WIB 2024][FINE] [SUB] * Get more help at https://help.gradle.org
+[Thu Aug 22 22:31:06 WIB 2024][FINE] [SUB] 
+[Thu Aug 22 22:31:06 WIB 2024][FINE] [SUB] BUILD FAILED in 46s
+[Thu Aug 22 22:31:06 WIB 2024][FINE] [SUB] 32 actionable tasks: 1 executed, 31 up-to-date
+[Thu Aug 22 22:31:07 WIB 2024][FINE] Result for install-task: 1
+[Thu Aug 22 22:31:07 WIB 2024][SEVERE] Process install-task failed with result: 1
+Check the log files under /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/log
+And please check https://docs.gluonhq.com/ for more information.
+[Thu Aug 22 22:31:07 WIB 2024][INFO] Logging process [install-task] to file: /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/log/process-install-task-1724340667084.log
+[Thu Aug 22 22:31:07 WIB 2024][SEVERE] Installing failed.
+Check the log files under /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/log
+And please check https://docs.gluonhq.com/ for more information.
+[Thu Aug 22 22:38:50 WIB 2024][INFO] ==================== RUN TASK ====================
+[Thu Aug 22 22:38:50 WIB 2024][FINE] PB Command for clearLog: /home/user/Android/Sdk/platform-tools/adb logcat -c
+[Thu Aug 22 22:38:50 WIB 2024][FINE] PB Command for run: /home/user/Android/Sdk/platform-tools/adb shell monkey -p com.hyvercode.gluondays 1
+[Thu Aug 22 22:38:50 WIB 2024][FINE] Start process clearLog...
+[Thu Aug 22 22:38:50 WIB 2024][FINE] Start process run...
+[Thu Aug 22 22:38:50 WIB 2024][FINE] [SUB]   bash arg: -p
+[Thu Aug 22 22:38:50 WIB 2024][FINE] [SUB]   bash arg: com.hyvercode.gluondays
+[Thu Aug 22 22:38:50 WIB 2024][FINE] [SUB]   bash arg: 1
+[Thu Aug 22 22:38:50 WIB 2024][FINE] Result for clearLog: 0
+[Thu Aug 22 22:38:50 WIB 2024][FINE] PB Command for log: /home/user/Android/Sdk/platform-tools/adb logcat -v brief -v color GraalCompiled:V GraalActivity:V GraalGluon:V GluonAttach:V AndroidRuntime:E ActivityManager:W *:S
+[Thu Aug 22 22:38:50 WIB 2024][FINE] Start process log...
+[Thu Aug 22 22:38:50 WIB 2024][INFO] [SUB] --------- beginning of kernel
+[Thu Aug 22 22:38:50 WIB 2024][INFO] [SUB] --------- beginning of main
+[Thu Aug 22 22:38:50 WIB 2024][INFO] [SUB] --------- beginning of system
+[Thu Aug 22 22:38:51 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): setHasOverlayUi called on unknown pid: 24941[0m
+[Thu Aug 22 22:38:52 WIB 2024][FINE] [SUB] args: [-p, com.hyvercode.gluondays, 1]
+[Thu Aug 22 22:38:52 WIB 2024][FINE] [SUB]  arg: "-p"
+[Thu Aug 22 22:38:52 WIB 2024][FINE] [SUB]  arg: "com.hyvercode.gluondays"
+[Thu Aug 22 22:38:52 WIB 2024][FINE] [SUB]  arg: "1"
+[Thu Aug 22 22:38:52 WIB 2024][FINE] [SUB] data="com.hyvercode.gluondays"
+[Thu Aug 22 22:38:53 WIB 2024][FINE] [SUB] Events injected: 1
+[Thu Aug 22 22:38:53 WIB 2024][FINE] [SUB] ## Network stats: elapsed time=75ms (0ms mobile, 0ms wifi, 75ms not connected)
+[Thu Aug 22 22:38:53 WIB 2024][FINE] Result for run: 0
+[Thu Aug 22 22:38:54 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Sending non-protected broadcast miui.intent.action.PACKAGE_FIRST_LAUNCH from system uid 1000 pkg null. Callers=com.android.server.am.ActivityManagerService.broadcastIntentLocked:17164 com.android.server.am.ActivityManagerService.broadcastIntentLocked:16485 com.android.server.am.ActivityManagerService.broadcastIntentWithFeature:17321 com.android.server.am.ActivityManagerService.broadcastIntent:17301 com.android.server.pm.IActivityManagerCompat.sendBroadcast:19 [0m
+[Thu Aug 22 22:38:54 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Slow operation: 302ms so far, now at startProcess: done updating battery stats[0m
+[Thu Aug 22 22:38:54 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Slow operation: 303ms so far, now at startProcess: building log message[0m
+[Thu Aug 22 22:38:54 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Slow operation: 304ms so far, now at startProcess: starting to update pids map[0m
+[Thu Aug 22 22:38:54 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Slow operation: 308ms so far, now at startProcess: done updating pids map[0m
+[Thu Aug 22 22:38:54 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.google.android.apps.photos/.backup.apiservice.sdk.PhotosSdkBackupApiService in 57580ms for connection[0m
+[Thu Aug 22 22:38:54 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.mi.android.globalminusscreen/com.google.mi.apps.gsa.nowoverlayservice.DrawerOverlayService in 57508ms for connection[0m
+[Thu Aug 22 22:38:54 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Slow operation: 141ms so far, now at startProcess: done updating battery stats[0m
+[Thu Aug 22 22:38:54 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Slow operation: 142ms so far, now at startProcess: building log message[0m
+[Thu Aug 22 22:38:54 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Slow operation: 142ms so far, now at startProcess: starting to update pids map[0m
+[Thu Aug 22 22:38:54 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Slow operation: 144ms so far, now at startProcess: done updating pids map[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): onCreate start, using Android Logging v1[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): onCreate done[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): onStart[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): onStart done[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): onResume[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): onResume done[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): surfaceCreated for com.gluonhq.helloandroid.MainActivity@9c3df4f[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): loading substrate library[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): setHasOverlayUi called on unknown pid: 24024[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.miui.core/miui.autoinstall.config.service.AutoInstallService in 56741ms for start-requested[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Foreground service started from background can not have location/camera/microphone access: service com.xiaomi.discover/com.xiaomi.market.service.AppActiveStatService[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): AndroidVM called JNI_OnLoad, vm = 0xb4000075ba10d380, androidEnv = 0xb4000075ba1633c0[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): loaded substrate library[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): nativeSetSurface called, env at 0xb4000075ba1633c0 and size 8, surface at 0x7fee475c98[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): native setSurface Ready, native window at 0xb400007516f8d010[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): metrics = DisplayMetrics{density=2.75, width=1080, height=2130, scaledDensity=2.75, xdpi=409.432, ydpi=409.903}, density = 2.75[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): SurfaceReady, surface at 0x7fee475c78[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): SurfaceReady, native window at 0xb400007516f8d010[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): Surface created, native code informed about it, nativeWindow at -5476376643985944560[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): We will now launch Graal in a separate thread[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): graalStarted true[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): surfaceCreated done[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): [MainActivity] surfaceChanged, format = 4, width = 1080, height = 2130[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): nativeSetSurface called, env at 0xb4000075ba1633c0 and size 8, surface at 0x7fee475ca8[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): native setSurface Ready, native window at 0xb400007516f8d010[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): surfaceChanged done, metrics = DisplayMetrics{density=2.75, width=1080, height=2130, scaledDensity=2.75, xdpi=409.432, ydpi=409.903}, density = 2.75[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): Start GraalApp, DALVIK env at 0xb4000074c8991140[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): PAGESIZE = 4096[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): EnvVersion = 65542[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): SurfaceRedraw needed: ask native graal layer to redraw surface[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): calling JavaMainWrapper_run with argsize: 23[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): launcher, nativeSurfaceRedrawNeeded called. Invoke method on glass_monocle[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): surfaceredraw needed part 1 done[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.xiaomi.mipicks/com.xiaomi.downloader.service.DownloadService in 66437ms for start-requested[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): launcher, nativeSurfaceRedrawNeeded called. Invoke method on glass_monocle[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): surfaceredraw needed (and wait) done[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): Aug 22, 2024 10:38:55 PM com.sun.javafx.application.PlatformImpl startup[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): WARNING: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @71c7db30'[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): Prism pipeline init order: es2 [0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): Using Double Precision Marlin Rasterizer[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): Using dirty region optimizations[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): Using system sized mask for primitives[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): Not forcing power of 2 sizes for textures[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): Using hardware CLAMP_TO_ZERO mode[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): Opting in for HiDPI pixel scaling[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): Prism pipeline name = com.sun.prism.es2.ES2Pipeline[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): Loading ES2 native library ... prism_es2_monocle[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): 	succeeded.[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): GLFactory using com.sun.prism.es2.MonocleGLFactory[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): In JNI_OnLoad_glass)monocle[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): (X) Got class = class com.sun.prism.es2.ES2Pipeline[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): Initialized prism pipeline: com.sun.prism.es2.ES2Pipeline[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): Maximum supported texture size: 16384[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): Maximum texture size clamped to 4096[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): Non power of two texture support = true[0m
+[Thu Aug 22 22:38:55 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): Maximum number of vertex attributes = 16[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): Maximum number of uniform vertex components = 1024[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): Maximum number of uniform fragment components = 1024[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): Maximum number of varying components = 124[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): Maximum number of texture units usable in a vertex shader = 16[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): Maximum number of texture units usable in a fragment shader = 16[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): Graphics Vendor: Qualcomm[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011):        Renderer: Adreno (TM) 610[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011):         Version: OpenGL ES 3.2 V@0502.0 (GIT@03e27f8, I326e6aff90, 1604374052) (Date:11/02/20)[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011):  vsync: true vpipe: true[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Initializing native Util from OnLoad[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Init Util[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_DALVIK, tid = 26104, existed? 0, dalvikEnv at 0xb4000074c8991c80[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Util :: Load className com/gluonhq/helloandroid/Util[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_DALVIK, tid = 26104, existed? 1, dalvikEnv at 0xb4000074c8991c80[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;231mV/GluonAttach(26011): Util <init>[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_DALVIK, tid = 26104, existed = 1, env at 0xb4000074c8991c80[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Dalvik Util init was called[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): In dummy JNI_OnLoad_javafx_font[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;40mI/GluonAttach(26011): JNI_OnLoad_display called[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): [Display Service] Initializing native Display from OnLoad[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_DALVIK, tid = 26123, existed? 0, dalvikEnv at 0xb4000074c8991dc0[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Util :: Load className com/gluonhq/helloandroid/DalvikDisplayService[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_DALVIK, tid = 26123, existed? 1, dalvikEnv at 0xb4000074c8991dc0[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_DALVIK, tid = 26123, existed = 1, env at 0xb4000074c8991dc0[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_DALVIK, tid = 26123, existed? 1, dalvikEnv at 0xb4000074c8991dc0[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_DALVIK, tid = 26123, existed = 1, env at 0xb4000074c8991dc0[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_GRAAL, tid = 26011, existed? 0, graalEnv at 0xb4000074c8991f00[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_GRAAL, tid = 26011, graalVM = 0x74c5907cc8, existed = 0, env at 0xb4000074c8991f00[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;40mI/GluonAttach(26011): JNI_OnLoad_storage called[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): [Storage Service] Initializing native Storage from OnLoad[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_DALVIK, tid = 26123, existed? 1, dalvikEnv at 0xb4000074c8991dc0[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Util :: Load className com/gluonhq/helloandroid/DalvikStorageService[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_DALVIK, tid = 26123, existed? 1, dalvikEnv at 0xb4000074c8991dc0[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_DALVIK, tid = 26123, existed = 1, env at 0xb4000074c8991dc0[0m
+[Thu Aug 22 22:38:56 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): File not found: /system/etc/system_fonts.xml[0m
+[Thu Aug 22 22:38:57 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.xiaomi.mipicks/com.xiaomi.downloader.service.DownloadService in 65078ms for start-requested[0m
+[Thu Aug 22 22:38:57 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_DALVIK, tid = 26123, existed? 1, dalvikEnv at 0xb4000074c8991dc0[0m
+[Thu Aug 22 22:38:57 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_DALVIK, tid = 26123, existed = 1, env at 0xb4000074c8991dc0[0m
+[Thu Aug 22 22:38:57 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): max rectangle texture cell size = 89[0m
+[Thu Aug 22 22:38:57 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): wrap rectangle texture = 2 x 2[0m
+[Thu Aug 22 22:38:57 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): ES2ResourceFactory: Prism - createStockShader: AlphaTexture_Color.frag[0m
+[Thu Aug 22 22:38:57 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): ES2ResourceFactory: Prism - createStockShader: Texture_Color.frag[0m
+[Thu Aug 22 22:38:57 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): PPSRenderer: scenario.effect - createShader: LinearConvolveShadow_20[0m
+[Thu Aug 22 22:38:57 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): ES2ResourceFactory: Prism - createStockShader: Solid_TextureRGB.frag[0m
+[Thu Aug 22 22:38:58 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): ES2ResourceFactory: Prism - createStockShader: FillRoundRect_Color.frag[0m
+[Thu Aug 22 22:38:58 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): PPSRenderer: scenario.effect - createShader: LinearConvolveShadow_28[0m
+[Thu Aug 22 22:38:58 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_DALVIK, tid = 26123, existed? 1, dalvikEnv at 0xb4000074c8991dc0[0m
+[Thu Aug 22 22:38:58 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_DALVIK, tid = 26123, existed = 1, env at 0xb4000074c8991dc0[0m
+[Thu Aug 22 22:38:58 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Foreground service started from background can not have location/camera/microphone access: service com.xiaomi.mipicks/com.xiaomi.market.service.AppActiveStatService[0m
+[Thu Aug 22 22:38:58 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): PPSRenderer: scenario.effect - createShader: LinearConvolveShadow_64[0m
+[Thu Aug 22 22:38:58 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.xiaomi.location.fused/.FusedLocationService in 73772ms for start-requested[0m
+[Thu Aug 22 22:38:58 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.xiaomi.bluetooth/com.android.bluetooth.ble.app.MiuiNearbyService in 83628ms for start-requested[0m
+[Thu Aug 22 22:38:58 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.xiaomi.bluetooth/com.android.bluetooth.ble.app.MiuiNearbyServiceV2 in 93627ms for start-requested[0m
+[Thu Aug 22 22:38:59 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): View wasn't focused, requesting focus[0m
+[Thu Aug 22 22:38:59 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): [MON] Create device[0m
+[Thu Aug 22 22:38:59 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): [MON] Create device done, add done[0m
+[Thu Aug 22 22:38:59 WIB 2024][INFO] [SUB] [38;5;75mD/GraalActivity(26011): onCreateInputConnection[0m
+[Thu Aug 22 22:38:59 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_DALVIK, tid = 26123, existed? 1, dalvikEnv at 0xb4000074c8991dc0[0m
+[Thu Aug 22 22:38:59 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_DALVIK, tid = 26123, existed = 1, env at 0xb4000074c8991dc0[0m
+[Thu Aug 22 22:38:59 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:38:59 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_DALVIK, tid = 26123, existed? 1, dalvikEnv at 0xb4000074c8991dc0[0m
+[Thu Aug 22 22:38:59 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_DALVIK, tid = 26123, existed = 1, env at 0xb4000074c8991dc0[0m
+[Thu Aug 22 22:39:00 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): PPSRenderer: scenario.effect - createShader: LinearConvolve_16[0m
+[Thu Aug 22 22:39:00 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): PPSRenderer: scenario.effect - createShader: LinearConvolve_20[0m
+[Thu Aug 22 22:39:00 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_DALVIK, tid = 26123, existed? 1, dalvikEnv at 0xb4000074c8991dc0[0m
+[Thu Aug 22 22:39:00 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_DALVIK, tid = 26123, existed = 1, env at 0xb4000074c8991dc0[0m
+[Thu Aug 22 22:39:00 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): ES2ResourceFactory: Prism - createStockShader: FillCircle_Color.frag[0m
+[Thu Aug 22 22:39:00 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Foreground service started from background can not have location/camera/microphone access: service com.xiaomi.mipicks/com.xiaomi.market.service.CloudConfigSyncService[0m
+[Thu Aug 22 22:39:01 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): PPSRenderer: scenario.effect - createShader: Blend_SRC_IN[0m
+[Thu Aug 22 22:39:01 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:01 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_DALVIK, tid = 26123, existed? 1, dalvikEnv at 0xb4000074c8991dc0[0m
+[Thu Aug 22 22:39:01 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_DALVIK, tid = 26123, existed = 1, env at 0xb4000074c8991dc0[0m
+[Thu Aug 22 22:39:01 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Initializing native Lifecycle from OnLoad[0m
+[Thu Aug 22 22:39:01 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_DALVIK, tid = 26123, existed? 1, dalvikEnv at 0xb4000074c8991dc0[0m
+[Thu Aug 22 22:39:01 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Util :: Load className com/gluonhq/helloandroid/DalvikLifecycleService[0m
+[Thu Aug 22 22:39:01 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_DALVIK, tid = 26123, existed? 1, dalvikEnv at 0xb4000074c8991dc0[0m
+[Thu Aug 22 22:39:01 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_DALVIK, tid = 26123, existed = 1, env at 0xb4000074c8991dc0[0m
+[Thu Aug 22 22:39:01 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Initializing native Lifecycle from OnLoad Done[0m
+[Thu Aug 22 22:39:01 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): ES2ResourceFactory: Prism - createStockShader: DrawCircle_Color.frag[0m
+[Thu Aug 22 22:39:01 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): Growing pool ES2 Vram Pool target to 79,529,630[0m
+[Thu Aug 22 22:39:02 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:04 WIB 2024][INFO] [SUB] [38;5;75mD/GraalActivity(26011): Long press![0m
+[Thu Aug 22 22:39:04 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:04 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:05 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:05 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.whatsapp/.messaging.MessageService in 96434ms for start-requested[0m
+[Thu Aug 22 22:39:06 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:07 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:08 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:09 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:11 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:12 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:13 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:15 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:16 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.facebook.services/com.facebook.oxygen.services.fbns.PreloadedFbnsService in 95910ms for start-requested[0m
+[Thu Aug 22 22:39:16 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:17 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:17 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:18 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:18 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:19 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:19 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:19 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:20 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:20 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:21 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:23 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Slow operation: 126ms so far, now at startProcess: done creating new process record[0m
+[Thu Aug 22 22:39:23 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Slow operation: 126ms so far, now at startProcess: stepping in to startProcess[0m
+[Thu Aug 22 22:39:23 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Slow operation: 128ms so far, now at startProcess: done starting proc![0m
+[Thu Aug 22 22:39:24 WIB 2024][INFO] [SUB] [38;5;75mD/GraalActivity(26011): Long press![0m
+[Thu Aug 22 22:39:24 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Sending non-protected broadcast miui.intent.TAKE_SCREENSHOT from system 26556:com.miui.screenshot/1000 pkg com.miui.screenshot. Callers=[0m
+[Thu Aug 22 22:39:25 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Sending non-protected broadcast miui.intent.TAKE_SCREENSHOT from system 26556:com.miui.screenshot/1000 pkg com.miui.screenshot. Callers=[0m
+[Thu Aug 22 22:39:25 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Stopping service due to app idle: u0a184 -41s225ms com.android.vending/com.google.android.finsky.verifier.impl.PackageVerificationService[0m
+[Thu Aug 22 22:39:29 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Sending non-protected broadcast com.miui.gallery.SAVE_TO_CLOUD from system 26556:com.miui.screenshot/1000 pkg com.miui.screenshot. Callers=[0m
+[Thu Aug 22 22:39:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:29 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Foreground service started from background can not have location/camera/microphone access: service com.miui.gallery/.scanner.core.MediaScannerService[0m
+[Thu Aug 22 22:39:29 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Foreground service started from background can not have location/camera/microphone access: service com.miui.gallery/.scanner.core.MediaScannerService[0m
+[Thu Aug 22 22:39:30 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:31 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:32 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:33 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:34 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:34 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:36 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:38 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:39 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:39 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:39 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:39 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:40 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:40 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:40 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:40 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:40 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:41 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:41 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:41 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:41 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:41 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:41 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:42 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:42 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.android.mtp/.MtpService in 79999ms for start-requested[0m
+[Thu Aug 22 22:39:42 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:42 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:42 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:42 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:43 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:43 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:43 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:43 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:43 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:45 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:45 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:45 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:45 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:45 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:46 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:46 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:46 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:46 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:46 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:47 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:47 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:47 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:49 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:49 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:50 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:52 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.miui.core/miui.autoinstall.config.service.AutoInstallService in 79998ms for start-requested[0m
+[Thu Aug 22 22:39:53 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:53 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:54 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:54 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:55 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:56 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:56 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:56 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:56 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:57 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:57 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:57 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:57 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:57 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:57 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:57 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:57 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:58 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:58 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:58 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:58 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:59 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:39:59 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:01 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:01 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:02 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.xiaomi.mipicks/com.xiaomi.downloader.service.DownloadService in 79997ms for start-requested[0m
+[Thu Aug 22 22:40:02 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:03 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:03 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:04 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:05 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:05 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:05 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:05 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:05 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:05 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:08 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:08 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:08 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:08 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:09 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:09 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:09 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:09 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:10 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:10 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:10 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:10 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:11 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:11 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:11 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:11 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:11 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:12 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:12 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.xiaomi.location.fused/.FusedLocationService in 79999ms for start-requested[0m
+[Thu Aug 22 22:40:12 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:12 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:12 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:12 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:13 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:13 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:13 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:14 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:15 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:15 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:18 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:19 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:20 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:21 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:21 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:22 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:22 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.xiaomi.bluetooth/com.android.bluetooth.ble.app.MiuiNearbyService in 79999ms for start-requested[0m
+[Thu Aug 22 22:40:23 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:23 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:24 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:25 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:26 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:26 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:27 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:28 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:28 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:30 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): setHasOverlayUi called on unknown pid: 26556[0m
+[Thu Aug 22 22:40:31 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:32 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.xiaomi.bluetooth/com.android.bluetooth.ble.app.MiuiNearbyServiceV2 in 79999ms for start-requested[0m
+[Thu Aug 22 22:40:32 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:33 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:34 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:34 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:34 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:35 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:35 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:35 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:35 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:36 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:36 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:36 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:37 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:37 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:38 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:39 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:40 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:41 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Stopping service due to app idle: u0a102 -36m14s675ms com.miui.gallery/.scanner.core.MediaScannerService[0m
+[Thu Aug 22 22:40:42 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.whatsapp/.messaging.MessageService in 79998ms for start-requested[0m
+[Thu Aug 22 22:40:42 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:43 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:45 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:46 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:50 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:50 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:51 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:51 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:51 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:51 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:51 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:52 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:52 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.facebook.services/com.facebook.oxygen.services.fbns.PreloadedFbnsService in 79996ms for start-requested[0m
+[Thu Aug 22 22:40:52 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:52 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:52 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:52 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:53 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:53 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:53 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:53 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:53 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:53 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:54 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:55 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:55 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:40:57 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:41:02 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.android.mtp/.MtpService in 79994ms for start-requested[0m
+[Thu Aug 22 22:41:12 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.miui.core/miui.autoinstall.config.service.AutoInstallService in 79998ms for start-requested[0m
+[Thu Aug 22 22:41:12 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:41:13 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:41:13 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:41:13 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:41:14 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:41:14 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:41:14 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:41:14 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:41:14 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:41:14 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:41:15 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:41:15 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:41:15 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:41:15 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:41:15 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:41:15 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:41:16 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:41:16 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:41:16 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:41:16 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:41:16 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:41:17 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:41:17 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:41:17 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:41:17 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:41:17 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:41:17 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:41:22 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.xiaomi.mipicks/com.xiaomi.downloader.service.DownloadService in 79995ms for start-requested[0m
+[Thu Aug 22 22:41:32 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.xiaomi.location.fused/.FusedLocationService in 79996ms for start-requested[0m
+[Thu Aug 22 22:41:32 WIB 2024][INFO] [SUB] [38;5;75mD/GraalActivity(26011): onCreateInputConnection[0m
+[Thu Aug 22 22:41:33 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Unable to start service Intent { act=miui.action.CAMERA_EMPTY_SERVICE pkg=com.android.camera } U=0: not found[0m
+[Thu Aug 22 22:41:33 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): onPause[0m
+[Thu Aug 22 22:41:33 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): Dispatching lifecycle event from native Dalvik layer: pause[0m
+[Thu Aug 22 22:41:33 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Call Attach method from native Lifecycle: pause[0m
+[Thu Aug 22 22:41:33 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_DALVIK, tid = 26011, existed? 1, dalvikEnv at 0xb4000075ba1633c0[0m
+[Thu Aug 22 22:41:33 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Native layer got new event: pause[0m
+[Thu Aug 22 22:41:33 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_GRAAL, tid = 26011, existed? 1, graalEnv at 0xb4000074ada39bc0[0m
+[Thu Aug 22 22:41:33 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_GRAAL, tid = 26011, graalVM = 0x74c5907cc8, existed = 1, env at 0xb4000074ada39bc0[0m
+[Thu Aug 22 22:41:33 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_GRAAL, tid = 26011, existed? 1, graalEnv at 0xb4000074ada39bc0[0m
+[Thu Aug 22 22:41:33 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_GRAAL, tid = 26011, graalVM = 0x74c5907cc8, existed = 1, env at 0xb4000074ada39bc0[0m
+[Thu Aug 22 22:41:33 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_DALVIK, tid = 26011, existed = 1, env at 0xb4000075ba1633c0[0m
+[Thu Aug 22 22:41:33 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): called Attach method from native Lifecycle done[0m
+[Thu Aug 22 22:41:34 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): nativeSetSurface called, env at 0xb4000075ba1633c0 and size 8, surface at 0x0[0m
+[Thu Aug 22 22:41:34 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): native setSurface was null[0m
+[Thu Aug 22 22:41:34 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): onStop[0m
+[Thu Aug 22 22:41:34 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): Dispatching lifecycle event from native Dalvik layer: stop[0m
+[Thu Aug 22 22:41:34 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Call Attach method from native Lifecycle: stop[0m
+[Thu Aug 22 22:41:34 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_DALVIK, tid = 26011, existed? 1, dalvikEnv at 0xb4000075ba1633c0[0m
+[Thu Aug 22 22:41:34 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Native layer got new event: stop[0m
+[Thu Aug 22 22:41:34 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_GRAAL, tid = 26011, existed? 1, graalEnv at 0xb4000074ada39bc0[0m
+[Thu Aug 22 22:41:34 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_GRAAL, tid = 26011, graalVM = 0x74c5907cc8, existed = 1, env at 0xb4000074ada39bc0[0m
+[Thu Aug 22 22:41:34 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_DALVIK, tid = 26011, existed = 1, env at 0xb4000075ba1633c0[0m
+[Thu Aug 22 22:41:34 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): called Attach method from native Lifecycle done[0m
+[Thu Aug 22 22:41:34 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Sending non-protected broadcast android.intent.action.KEYCODE_POWER_UP from system 1714:system/1000 pkg android. Callers=com.android.server.am.ActivityManagerService.broadcastIntentLocked:17066 com.android.server.am.ActivityManagerService.broadcastIntentLocked:16485 com.android.server.am.ActivityManagerService.broadcastIntentWithFeature:17321 android.app.ContextImpl.sendBroadcastAsUser:1300 com.android.server.policy.BaseMiuiPhoneWindowManager$15.run:2467 [0m
+[Thu Aug 22 22:41:34 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Sending non-protected broadcast android.intent.action.KEYCODE_POWER_UP from system 1714:system/1000 pkg android. Callers=com.android.server.am.ActivityManagerService.broadcastIntentLocked:17164 com.android.server.am.ActivityManagerService.broadcastIntentLocked:16485 com.android.server.am.ActivityManagerService.broadcastIntentWithFeature:17321 android.app.ContextImpl.sendBroadcastAsUser:1300 com.android.server.policy.BaseMiuiPhoneWindowManager$15.run:2467 [0m
+[Thu Aug 22 22:41:34 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): setHasOverlayUi called on unknown pid: 18094[0m
+[Thu Aug 22 22:41:34 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): setHasOverlayUi called on unknown pid: 12412[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): UserLifecycleEvent 5 received without an active userJourneySession.[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): onRestart[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): Dispatching lifecycle event from native Dalvik layer: restart[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Call Attach method from native Lifecycle: restart[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_DALVIK, tid = 26011, existed? 1, dalvikEnv at 0xb4000075ba1633c0[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Native layer got new event: restart[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_GRAAL, tid = 26011, existed? 1, graalEnv at 0xb4000074ada39bc0[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_GRAAL, tid = 26011, graalVM = 0x74c5907cc8, existed = 1, env at 0xb4000074ada39bc0[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_DALVIK, tid = 26011, existed = 1, env at 0xb4000075ba1633c0[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): called Attach method from native Lifecycle done[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): onStart[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): Dispatching lifecycle event from native Dalvik layer: start[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Call Attach method from native Lifecycle: start[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_DALVIK, tid = 26011, existed? 1, dalvikEnv at 0xb4000075ba1633c0[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Native layer got new event: start[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_GRAAL, tid = 26011, existed? 1, graalEnv at 0xb4000074ada39bc0[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_GRAAL, tid = 26011, graalVM = 0x74c5907cc8, existed = 1, env at 0xb4000074ada39bc0[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_DALVIK, tid = 26011, existed = 1, env at 0xb4000075ba1633c0[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): called Attach method from native Lifecycle done[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): onStart done[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): onResume[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): Dispatching lifecycle event from native Dalvik layer: resume[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Call Attach method from native Lifecycle: resume[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_DALVIK, tid = 26011, existed? 1, dalvikEnv at 0xb4000075ba1633c0[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Native layer got new event: resume[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_GRAAL, tid = 26011, existed? 1, graalEnv at 0xb4000074ada39bc0[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_GRAAL, tid = 26011, graalVM = 0x74c5907cc8, existed = 1, env at 0xb4000074ada39bc0[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_DALVIK, tid = 26011, existed = 1, env at 0xb4000075ba1633c0[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): called Attach method from native Lifecycle done[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): onResume done[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): surfaceCreated for com.gluonhq.helloandroid.MainActivity@9c3df4f[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): loading substrate library[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): loaded substrate library[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): nativeSetSurface called, env at 0xb4000075ba1633c0 and size 8, surface at 0x7fee475a18[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): native setSurface Ready, native window at 0xb4000074adac0010[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): metrics = DisplayMetrics{density=2.75, width=1080, height=2130, scaledDensity=2.75, xdpi=409.432, ydpi=409.903}, density = 2.75[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): SurfaceReady, surface at 0x7fee4759f8[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): SurfaceReady, native window at 0xb4000074adac0010[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): Surface created, native code informed about it, nativeWindow at -5476376645752586224[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): GraalApp is already started.[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): surfaceCreated done[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): [MainActivity] surfaceChanged, format = 4, width = 1080, height = 2130[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): nativeSetSurface called, env at 0xb4000075ba1633c0 and size 8, surface at 0x7fee475a28[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): native setSurface Ready, native window at 0xb4000074adac0010[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): surfaceChanged done, metrics = DisplayMetrics{density=2.75, width=1080, height=2130, scaledDensity=2.75, xdpi=409.432, ydpi=409.903}, density = 2.75[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): SurfaceRedraw needed: ask native graal layer to redraw surface[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): launcher, nativeSurfaceRedrawNeeded called. Invoke method on glass_monocle[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): surfaceredraw needed part 1 done[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): PPSRenderer: scenario.effect - createShader: LinearConvolveShadow_20[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): PPSRenderer: scenario.effect - createShader: LinearConvolveShadow_28[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): launcher, nativeSurfaceRedrawNeeded called. Invoke method on glass_monocle[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): surfaceredraw needed (and wait) done[0m
+[Thu Aug 22 22:41:37 WIB 2024][INFO] [SUB] [38;5;75mD/GraalActivity(26011): onCreateInputConnection[0m
+[Thu Aug 22 22:41:51 WIB 2024][INFO] [SUB] [38;5;75mD/GraalActivity(26011): onCreateInputConnection[0m
+[Thu Aug 22 22:41:52 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Unable to start service Intent { act=miui.action.CAMERA_EMPTY_SERVICE pkg=com.android.camera } U=0: not found[0m
+[Thu Aug 22 22:41:52 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): onPause[0m
+[Thu Aug 22 22:41:52 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): Dispatching lifecycle event from native Dalvik layer: pause[0m
+[Thu Aug 22 22:41:52 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Call Attach method from native Lifecycle: pause[0m
+[Thu Aug 22 22:41:52 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_DALVIK, tid = 26011, existed? 1, dalvikEnv at 0xb4000075ba1633c0[0m
+[Thu Aug 22 22:41:52 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Native layer got new event: pause[0m
+[Thu Aug 22 22:41:52 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_GRAAL, tid = 26011, existed? 1, graalEnv at 0xb4000074ada39bc0[0m
+[Thu Aug 22 22:41:52 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_GRAAL, tid = 26011, graalVM = 0x74c5907cc8, existed = 1, env at 0xb4000074ada39bc0[0m
+[Thu Aug 22 22:41:52 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_GRAAL, tid = 26011, existed? 1, graalEnv at 0xb4000074ada39bc0[0m
+[Thu Aug 22 22:41:52 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_GRAAL, tid = 26011, graalVM = 0x74c5907cc8, existed = 1, env at 0xb4000074ada39bc0[0m
+[Thu Aug 22 22:41:52 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_DALVIK, tid = 26011, existed = 1, env at 0xb4000075ba1633c0[0m
+[Thu Aug 22 22:41:52 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): called Attach method from native Lifecycle done[0m
+[Thu Aug 22 22:41:52 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): nativeSetSurface called, env at 0xb4000075ba1633c0 and size 8, surface at 0x0[0m
+[Thu Aug 22 22:41:52 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): native setSurface was null[0m
+[Thu Aug 22 22:41:52 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): onStop[0m
+[Thu Aug 22 22:41:52 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): Dispatching lifecycle event from native Dalvik layer: stop[0m
+[Thu Aug 22 22:41:52 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Call Attach method from native Lifecycle: stop[0m
+[Thu Aug 22 22:41:52 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_DALVIK, tid = 26011, existed? 1, dalvikEnv at 0xb4000075ba1633c0[0m
+[Thu Aug 22 22:41:52 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Native layer got new event: stop[0m
+[Thu Aug 22 22:41:52 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_GRAAL, tid = 26011, existed? 1, graalEnv at 0xb4000074ada39bc0[0m
+[Thu Aug 22 22:41:52 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_GRAAL, tid = 26011, graalVM = 0x74c5907cc8, existed = 1, env at 0xb4000074ada39bc0[0m
+[Thu Aug 22 22:41:52 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_DALVIK, tid = 26011, existed = 1, env at 0xb4000075ba1633c0[0m
+[Thu Aug 22 22:41:52 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): called Attach method from native Lifecycle done[0m
+[Thu Aug 22 22:42:02 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Sending non-protected broadcast android.intent.action.KEYCODE_POWER_UP from system 1714:system/1000 pkg android. Callers=com.android.server.am.ActivityManagerService.broadcastIntentLocked:17066 com.android.server.am.ActivityManagerService.broadcastIntentLocked:16485 com.android.server.am.ActivityManagerService.broadcastIntentWithFeature:17321 android.app.ContextImpl.sendBroadcastAsUser:1300 com.android.server.policy.BaseMiuiPhoneWindowManager$15.run:2467 [0m
+[Thu Aug 22 22:42:02 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Sending non-protected broadcast android.intent.action.KEYCODE_POWER_UP from system 1714:system/1000 pkg android. Callers=com.android.server.am.ActivityManagerService.broadcastIntentLocked:17164 com.android.server.am.ActivityManagerService.broadcastIntentLocked:16485 com.android.server.am.ActivityManagerService.broadcastIntentWithFeature:17321 android.app.ContextImpl.sendBroadcastAsUser:1300 com.android.server.policy.BaseMiuiPhoneWindowManager$15.run:2467 [0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): UserLifecycleEvent 5 received without an active userJourneySession.[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): onRestart[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): Dispatching lifecycle event from native Dalvik layer: restart[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Call Attach method from native Lifecycle: restart[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_DALVIK, tid = 26011, existed? 1, dalvikEnv at 0xb4000075ba1633c0[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Native layer got new event: restart[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_GRAAL, tid = 26011, existed? 1, graalEnv at 0xb4000074ada39bc0[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_GRAAL, tid = 26011, graalVM = 0x74c5907cc8, existed = 1, env at 0xb4000074ada39bc0[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_DALVIK, tid = 26011, existed = 1, env at 0xb4000075ba1633c0[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): called Attach method from native Lifecycle done[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): onStart[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): Dispatching lifecycle event from native Dalvik layer: start[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Call Attach method from native Lifecycle: start[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_DALVIK, tid = 26011, existed? 1, dalvikEnv at 0xb4000075ba1633c0[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Native layer got new event: start[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_GRAAL, tid = 26011, existed? 1, graalEnv at 0xb4000074ada39bc0[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_GRAAL, tid = 26011, graalVM = 0x74c5907cc8, existed = 1, env at 0xb4000074ada39bc0[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_DALVIK, tid = 26011, existed = 1, env at 0xb4000075ba1633c0[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): called Attach method from native Lifecycle done[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): onStart done[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): onResume[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): Dispatching lifecycle event from native Dalvik layer: resume[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Call Attach method from native Lifecycle: resume[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_DALVIK, tid = 26011, existed? 1, dalvikEnv at 0xb4000075ba1633c0[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Native layer got new event: resume[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_GRAAL, tid = 26011, existed? 1, graalEnv at 0xb4000074ada39bc0[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_GRAAL, tid = 26011, graalVM = 0x74c5907cc8, existed = 1, env at 0xb4000074ada39bc0[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_DALVIK, tid = 26011, existed = 1, env at 0xb4000075ba1633c0[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): called Attach method from native Lifecycle done[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): onResume done[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): surfaceCreated for com.gluonhq.helloandroid.MainActivity@9c3df4f[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): loading substrate library[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): loaded substrate library[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): nativeSetSurface called, env at 0xb4000075ba1633c0 and size 8, surface at 0x7fee475a18[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): native setSurface Ready, native window at 0xb400007516fbd010[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): metrics = DisplayMetrics{density=2.75, width=1080, height=2130, scaledDensity=2.75, xdpi=409.432, ydpi=409.903}, density = 2.75[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): SurfaceReady, surface at 0x7fee4759f8[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): SurfaceReady, native window at 0xb400007516fbd010[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): Surface created, native code informed about it, nativeWindow at -5476376643985747952[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): GraalApp is already started.[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): surfaceCreated done[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): [MainActivity] surfaceChanged, format = 4, width = 1080, height = 2130[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): nativeSetSurface called, env at 0xb4000075ba1633c0 and size 8, surface at 0x7fee475a28[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): native setSurface Ready, native window at 0xb400007516fbd010[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): surfaceChanged done, metrics = DisplayMetrics{density=2.75, width=1080, height=2130, scaledDensity=2.75, xdpi=409.432, ydpi=409.903}, density = 2.75[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): SurfaceRedraw needed: ask native graal layer to redraw surface[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): launcher, nativeSurfaceRedrawNeeded called. Invoke method on glass_monocle[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): surfaceredraw needed part 1 done[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): launcher, nativeSurfaceRedrawNeeded called. Invoke method on glass_monocle[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): surfaceredraw needed (and wait) done[0m
+[Thu Aug 22 22:42:04 WIB 2024][INFO] [SUB] [38;5;75mD/GraalActivity(26011): onCreateInputConnection[0m
+[Thu Aug 22 22:42:06 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): PPSRenderer: scenario.effect - createShader: LinearConvolve_16[0m
+[Thu Aug 22 22:42:06 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): PPSRenderer: scenario.effect - createShader: LinearConvolveShadow_64[0m
+[Thu Aug 22 22:42:06 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): PPSRenderer: scenario.effect - createShader: LinearConvolve_20[0m
+[Thu Aug 22 22:42:06 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:42:06 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:42:06 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:42:06 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.facebook.services/com.facebook.oxygen.services.fbns.PreloadedFbnsService in 1000ms for start-requested[0m
+[Thu Aug 22 22:42:07 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.whatsapp/.messaging.MessageService in 319992ms for start-requested[0m
+[Thu Aug 22 22:42:07 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:42:07 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:42:07 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:42:07 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:42:07 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:42:08 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Unable to start service Intent { cmp=com.tokopedia.sellerapp/com.tokopedia.notification.common.service.PushNotificationService } U=0: not found[0m
+[Thu Aug 22 22:42:08 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:42:08 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:42:08 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:42:08 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:42:08 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:42:09 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:42:09 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:42:09 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Unable to start service Intent { cmp=com.tokopedia.sellerapp/com.tokopedia.notification.common.service.PushNotificationService } U=0: not found[0m
+[Thu Aug 22 22:42:09 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:42:09 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:42:09 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:42:10 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:42:10 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:42:10 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:42:10 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:42:10 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:42:11 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:42:11 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:42:11 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:42:11 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:42:11 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:42:12 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(26011): don't add points, primary = -1[0m
+[Thu Aug 22 22:42:27 WIB 2024][INFO] [SUB] [38;5;75mD/GraalActivity(26011): onCreateInputConnection[0m
+[Thu Aug 22 22:42:27 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): onPause[0m
+[Thu Aug 22 22:42:27 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): Dispatching lifecycle event from native Dalvik layer: pause[0m
+[Thu Aug 22 22:42:27 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Call Attach method from native Lifecycle: pause[0m
+[Thu Aug 22 22:42:27 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_DALVIK, tid = 26011, existed? 1, dalvikEnv at 0xb4000075ba1633c0[0m
+[Thu Aug 22 22:42:27 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Native layer got new event: pause[0m
+[Thu Aug 22 22:42:27 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_GRAAL, tid = 26011, existed? 1, graalEnv at 0xb4000074ada39bc0[0m
+[Thu Aug 22 22:42:27 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_GRAAL, tid = 26011, graalVM = 0x74c5907cc8, existed = 1, env at 0xb4000074ada39bc0[0m
+[Thu Aug 22 22:42:27 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_GRAAL, tid = 26011, existed? 1, graalEnv at 0xb4000074ada39bc0[0m
+[Thu Aug 22 22:42:27 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Unable to start service Intent { act=miui.action.CAMERA_EMPTY_SERVICE pkg=com.android.camera } U=0: not found[0m
+[Thu Aug 22 22:42:27 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_GRAAL, tid = 26011, graalVM = 0x74c5907cc8, existed = 1, env at 0xb4000074ada39bc0[0m
+[Thu Aug 22 22:42:27 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_DALVIK, tid = 26011, existed = 1, env at 0xb4000075ba1633c0[0m
+[Thu Aug 22 22:42:27 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): called Attach method from native Lifecycle done[0m
+[Thu Aug 22 22:42:27 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): nativeSetSurface called, env at 0xb4000075ba1633c0 and size 8, surface at 0x0[0m
+[Thu Aug 22 22:42:27 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): native setSurface was null[0m
+[Thu Aug 22 22:42:27 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(26011): onStop[0m
+[Thu Aug 22 22:42:27 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(26011): Dispatching lifecycle event from native Dalvik layer: stop[0m
+[Thu Aug 22 22:42:27 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Call Attach method from native Lifecycle: stop[0m
+[Thu Aug 22 22:42:27 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_DALVIK, tid = 26011, existed? 1, dalvikEnv at 0xb4000075ba1633c0[0m
+[Thu Aug 22 22:42:27 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): Native layer got new event: stop[0m
+[Thu Aug 22 22:42:27 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): ATTACH_GRAAL, tid = 26011, existed? 1, graalEnv at 0xb4000074ada39bc0[0m
+[Thu Aug 22 22:42:27 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_GRAAL, tid = 26011, graalVM = 0x74c5907cc8, existed = 1, env at 0xb4000074ada39bc0[0m
+[Thu Aug 22 22:42:27 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(26011): DETACH_DALVIK, tid = 26011, existed = 1, env at 0xb4000075ba1633c0[0m
+[Thu Aug 22 22:42:27 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(26011): called Attach method from native Lifecycle done[0m
+[Thu Aug 22 22:42:28 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Slow operation: 309ms so far, now at startProcess: done creating new process record[0m
+[Thu Aug 22 22:42:28 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Slow operation: 309ms so far, now at startProcess: stepping in to startProcess[0m
+[Thu Aug 22 22:42:28 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Slow operation: 313ms so far, now at startProcess: done starting proc![0m
+[Thu Aug 22 22:42:37 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): setHasOverlayUi called on unknown pid: 28296[0m
+[Thu Aug 22 22:42:38 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.facebook.services/com.facebook.oxygen.services.fbns.PreloadedFbnsService in 23924ms for start-requested[0m
+[Thu Aug 22 22:42:38 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.android.mtp/.MtpService in 319976ms for start-requested[0m
+[Thu Aug 22 22:42:38 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Exception when unbinding service com.google.android.apps.photos/.backup.apiservice.sdk.PhotosSdkBackupApiService[0m
+[Thu Aug 22 22:42:38 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): android.os.DeadObjectException[0m
+[Thu Aug 22 22:42:38 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): 	at android.os.BinderProxy.transactNative(Native Method)[0m
+[Thu Aug 22 22:42:38 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): 	at android.os.BinderProxy.transact(BinderProxy.java:540)[0m
+[Thu Aug 22 22:42:38 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): 	at android.app.IApplicationThread$Stub$Proxy.scheduleUnbindService(IApplicationThread.java:1661)[0m
+[Thu Aug 22 22:42:38 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): 	at com.android.server.am.ActiveServices.removeConnectionLocked(ActiveServices.java:3821)[0m
+[Thu Aug 22 22:42:38 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): 	at com.android.server.am.ActiveServices.unbindServiceLocked(ActiveServices.java:2428)[0m
+[Thu Aug 22 22:42:38 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): 	at com.android.server.am.ActivityManagerService.unbindService(ActivityManagerService.java:15728)[0m
+[Thu Aug 22 22:42:38 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:2682)[0m
+[Thu Aug 22 22:42:38 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2977)[0m
+[Thu Aug 22 22:42:38 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): 	at android.os.Binder.execTransactInternal(Binder.java:1154)[0m
+[Thu Aug 22 22:42:38 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): 	at android.os.Binder.execTransact(Binder.java:1123)[0m
+[Thu Aug 22 22:42:45 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Foreground service started from background can not have location/camera/microphone access: service com.xiaomi.mipicks/com.xiaomi.market.service.CloudConfigSyncService[0m
+[Thu Aug 22 22:43:14 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Unable to start service Intent { cmp=com.tokopedia.sellerapp/com.tokopedia.notification.common.service.PushNotificationService } U=0: not found[0m
+[Thu Aug 22 22:43:14 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Unable to start service Intent { cmp=com.tokopedia.sellerapp/com.tokopedia.notification.common.service.PushNotificationService } U=0: not found[0m
+[Thu Aug 22 22:43:45 WIB 2024][FINE] Result for log: 130
+[Thu Aug 22 22:43:45 WIB 2024][SEVERE] Process log failed with result: 130
+Check the log files under /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/log
+And please check https://docs.gluonhq.com/ for more information.
+[Thu Aug 22 22:48:27 WIB 2024][INFO] ==================== RUN TASK ====================
+[Thu Aug 22 22:48:27 WIB 2024][FINE] PB Command for clearLog: /home/user/Android/Sdk/platform-tools/adb logcat -c
+[Thu Aug 22 22:48:27 WIB 2024][FINE] PB Command for run: /home/user/Android/Sdk/platform-tools/adb shell monkey -p com.hyvercode.gluondays 1
+[Thu Aug 22 22:48:27 WIB 2024][FINE] Start process clearLog...
+[Thu Aug 22 22:48:27 WIB 2024][FINE] Start process run...
+[Thu Aug 22 22:48:27 WIB 2024][FINE] [SUB]   bash arg: -p
+[Thu Aug 22 22:48:27 WIB 2024][FINE] [SUB]   bash arg: com.hyvercode.gluondays
+[Thu Aug 22 22:48:27 WIB 2024][FINE] [SUB]   bash arg: 1
+[Thu Aug 22 22:48:27 WIB 2024][FINE] Result for clearLog: 0
+[Thu Aug 22 22:48:27 WIB 2024][FINE] PB Command for log: /home/user/Android/Sdk/platform-tools/adb logcat -v brief -v color GraalCompiled:V GraalActivity:V GraalGluon:V GluonAttach:V AndroidRuntime:E ActivityManager:W *:S
+[Thu Aug 22 22:48:27 WIB 2024][FINE] Start process log...
+[Thu Aug 22 22:48:27 WIB 2024][INFO] [SUB] --------- beginning of main
+[Thu Aug 22 22:48:27 WIB 2024][INFO] [SUB] --------- beginning of system
+[Thu Aug 22 22:48:27 WIB 2024][INFO] [SUB] --------- beginning of kernel
+[Thu Aug 22 22:48:27 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.mi.android.globalminusscreen/com.google.mi.apps.gsa.nowoverlayservice.DrawerOverlayService in 30838ms for connection[0m
+[Thu Aug 22 22:48:27 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): setHasOverlayUi called on unknown pid: 29980[0m
+[Thu Aug 22 22:48:27 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): setHasOverlayUi called on unknown pid: 30644[0m
+[Thu Aug 22 22:48:28 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.xiaomi.location.fused/.FusedLocationService in 29926ms for start-requested[0m
+[Thu Aug 22 22:48:28 WIB 2024][FINE] [SUB] args: [-p, com.hyvercode.gluondays, 1]
+[Thu Aug 22 22:48:28 WIB 2024][FINE] [SUB]  arg: "-p"
+[Thu Aug 22 22:48:28 WIB 2024][FINE] [SUB]  arg: "com.hyvercode.gluondays"
+[Thu Aug 22 22:48:28 WIB 2024][FINE] [SUB]  arg: "1"
+[Thu Aug 22 22:48:28 WIB 2024][FINE] [SUB] data="com.hyvercode.gluondays"
+[Thu Aug 22 22:48:28 WIB 2024][FINE] [SUB] Events injected: 1
+[Thu Aug 22 22:48:28 WIB 2024][FINE] [SUB] ## Network stats: elapsed time=83ms (0ms mobile, 0ms wifi, 83ms not connected)
+[Thu Aug 22 22:48:29 WIB 2024][FINE] Result for run: 0
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity( 1967): onCreate start, using Android Logging v1[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity( 1967): onCreate done[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity( 1967): onStart[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity( 1967): onStart done[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity( 1967): onResume[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity( 1967): onResume done[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity( 1967): surfaceCreated for com.gluonhq.helloandroid.MainActivity@9c3df4f[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity( 1967): loading substrate library[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon( 1967): AndroidVM called JNI_OnLoad, vm = 0xb4000075ba10d380, androidEnv = 0xb4000075ba1633c0[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity( 1967): loaded substrate library[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon( 1967): nativeSetSurface called, env at 0xb4000075ba1633c0 and size 8, surface at 0x7fee475c98[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon( 1967): native setSurface Ready, native window at 0xb400007516ea5010[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity( 1967): metrics = DisplayMetrics{density=2.75, width=1080, height=2130, scaledDensity=2.75, xdpi=409.432, ydpi=409.903}, density = 2.75[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon( 1967): SurfaceReady, surface at 0x7fee475c78[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon( 1967): SurfaceReady, native window at 0xb400007516ea5010[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity( 1967): Surface created, native code informed about it, nativeWindow at -5476376643986894832[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity( 1967): We will now launch Graal in a separate thread[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity( 1967): graalStarted true[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity( 1967): surfaceCreated done[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity( 1967): [MainActivity] surfaceChanged, format = 4, width = 1080, height = 2130[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon( 1967): nativeSetSurface called, env at 0xb4000075ba1633c0 and size 8, surface at 0x7fee475ca8[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon( 1967): native setSurface Ready, native window at 0xb400007516ea5010[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity( 1967): surfaceChanged done, metrics = DisplayMetrics{density=2.75, width=1080, height=2130, scaledDensity=2.75, xdpi=409.432, ydpi=409.903}, density = 2.75[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity( 1967): SurfaceRedraw needed: ask native graal layer to redraw surface[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon( 1967): launcher, nativeSurfaceRedrawNeeded called. Invoke method on glass_monocle[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity( 1967): surfaceredraw needed part 1 done[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon( 1967): Start GraalApp, DALVIK env at 0xb400007516e8c000[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon( 1967): PAGESIZE = 4096[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon( 1967): EnvVersion = 65542[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon( 1967): calling JavaMainWrapper_run with argsize: 23[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): Aug 22, 2024 10:48:29 PM com.sun.javafx.application.PlatformImpl startup[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): WARNING: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @71c7db30'[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): Prism pipeline init order: es2 [0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): Using Double Precision Marlin Rasterizer[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): Using dirty region optimizations[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): Using system sized mask for primitives[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): Not forcing power of 2 sizes for textures[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): Using hardware CLAMP_TO_ZERO mode[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): Opting in for HiDPI pixel scaling[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): Prism pipeline name = com.sun.prism.es2.ES2Pipeline[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): Loading ES2 native library ... prism_es2_monocle[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): 	succeeded.[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): GLFactory using com.sun.prism.es2.MonocleGLFactory[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): In JNI_OnLoad_glass)monocle[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): (X) Got class = class com.sun.prism.es2.ES2Pipeline[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): Initialized prism pipeline: com.sun.prism.es2.ES2Pipeline[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): Maximum supported texture size: 16384[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): Maximum texture size clamped to 4096[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): Non power of two texture support = true[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): Maximum number of vertex attributes = 16[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): Maximum number of uniform vertex components = 1024[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): Maximum number of uniform fragment components = 1024[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): Maximum number of varying components = 124[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): Maximum number of texture units usable in a vertex shader = 16[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): Maximum number of texture units usable in a fragment shader = 16[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): Graphics Vendor: Qualcomm[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967):        Renderer: Adreno (TM) 610[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967):         Version: OpenGL ES 3.2 V@0502.0 (GIT@03e27f8, I326e6aff90, 1604374052) (Date:11/02/20)[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967):  vsync: true vpipe: true[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon( 1967): In dummy JNI_OnLoad_javafx_font[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach( 1967): Initializing native Util from OnLoad[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach( 1967): Init Util[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon( 1967): ATTACH_DALVIK, tid = 2228, existed? 0, dalvikEnv at 0xb400007523e0ae80[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach( 1967): Util :: Load className com/gluonhq/helloandroid/Util[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon( 1967): ATTACH_DALVIK, tid = 2228, existed? 1, dalvikEnv at 0xb400007523e0ae80[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;231mV/GluonAttach( 1967): Util <init>[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon( 1967): DETACH_DALVIK, tid = 2228, existed = 1, env at 0xb400007523e0ae80[0m
+[Thu Aug 22 22:48:29 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach( 1967): Dalvik Util init was called[0m
+[Thu Aug 22 22:48:30 WIB 2024][INFO] [SUB] [38;5;40mI/GluonAttach( 1967): JNI_OnLoad_display called[0m
+[Thu Aug 22 22:48:30 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach( 1967): [Display Service] Initializing native Display from OnLoad[0m
+[Thu Aug 22 22:48:30 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon( 1967): ATTACH_DALVIK, tid = 2233, existed? 0, dalvikEnv at 0xb400007523e0b100[0m
+[Thu Aug 22 22:48:30 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach( 1967): Util :: Load className com/gluonhq/helloandroid/DalvikDisplayService[0m
+[Thu Aug 22 22:48:30 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon( 1967): ATTACH_DALVIK, tid = 2233, existed? 1, dalvikEnv at 0xb400007523e0b100[0m
+[Thu Aug 22 22:48:30 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon( 1967): DETACH_DALVIK, tid = 2233, existed = 1, env at 0xb400007523e0b100[0m
+[Thu Aug 22 22:48:30 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon( 1967): launcher, nativeSurfaceRedrawNeeded called. Invoke method on glass_monocle[0m
+[Thu Aug 22 22:48:30 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity( 1967): surfaceredraw needed (and wait) done[0m
+[Thu Aug 22 22:48:30 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon( 1967): ATTACH_DALVIK, tid = 2233, existed? 1, dalvikEnv at 0xb400007523e0b100[0m
+[Thu Aug 22 22:48:30 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon( 1967): DETACH_DALVIK, tid = 2233, existed = 1, env at 0xb400007523e0b100[0m
+[Thu Aug 22 22:48:30 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon( 1967): ATTACH_GRAAL, tid = 1967, existed? 1, graalEnv at 0xb400007516e8da40[0m
+[Thu Aug 22 22:48:30 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon( 1967): DETACH_GRAAL, tid = 1967, graalVM = 0x74c6b6ccc8, existed = 1, env at 0xb400007516e8da40[0m
+[Thu Aug 22 22:48:30 WIB 2024][INFO] [SUB] [38;5;40mI/GluonAttach( 1967): JNI_OnLoad_storage called[0m
+[Thu Aug 22 22:48:30 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach( 1967): [Storage Service] Initializing native Storage from OnLoad[0m
+[Thu Aug 22 22:48:30 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon( 1967): ATTACH_DALVIK, tid = 2233, existed? 1, dalvikEnv at 0xb400007523e0b100[0m
+[Thu Aug 22 22:48:30 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach( 1967): Util :: Load className com/gluonhq/helloandroid/DalvikStorageService[0m
+[Thu Aug 22 22:48:30 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon( 1967): ATTACH_DALVIK, tid = 2233, existed? 1, dalvikEnv at 0xb400007523e0b100[0m
+[Thu Aug 22 22:48:30 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon( 1967): DETACH_DALVIK, tid = 2233, existed = 1, env at 0xb400007523e0b100[0m
+[Thu Aug 22 22:48:30 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): File not found: /system/etc/system_fonts.xml[0m
+[Thu Aug 22 22:48:31 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon( 1967): ATTACH_DALVIK, tid = 2233, existed? 1, dalvikEnv at 0xb400007523e0b100[0m
+[Thu Aug 22 22:48:31 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon( 1967): DETACH_DALVIK, tid = 2233, existed = 1, env at 0xb400007523e0b100[0m
+[Thu Aug 22 22:48:31 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): max rectangle texture cell size = 89[0m
+[Thu Aug 22 22:48:31 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): wrap rectangle texture = 2 x 2[0m
+[Thu Aug 22 22:48:31 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): ES2ResourceFactory: Prism - createStockShader: AlphaTexture_Color.frag[0m
+[Thu Aug 22 22:48:31 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): ES2ResourceFactory: Prism - createStockShader: Texture_Color.frag[0m
+[Thu Aug 22 22:48:31 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): PPSRenderer: scenario.effect - createShader: LinearConvolveShadow_20[0m
+[Thu Aug 22 22:48:31 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): ES2ResourceFactory: Prism - createStockShader: Solid_TextureRGB.frag[0m
+[Thu Aug 22 22:48:31 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): ES2ResourceFactory: Prism - createStockShader: FillRoundRect_Color.frag[0m
+[Thu Aug 22 22:48:31 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): PPSRenderer: scenario.effect - createShader: LinearConvolveShadow_28[0m
+[Thu Aug 22 22:48:31 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon( 1967): ATTACH_DALVIK, tid = 2233, existed? 1, dalvikEnv at 0xb400007523e0b100[0m
+[Thu Aug 22 22:48:31 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon( 1967): DETACH_DALVIK, tid = 2233, existed = 1, env at 0xb400007523e0b100[0m
+[Thu Aug 22 22:48:31 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.xiaomi.bluetooth/com.android.bluetooth.ble.app.MiuiNearbyService in 36684ms for start-requested[0m
+[Thu Aug 22 22:48:31 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.xiaomi.bluetooth/com.android.bluetooth.ble.app.MiuiNearbyServiceV2 in 46684ms for start-requested[0m
+[Thu Aug 22 22:48:31 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): PPSRenderer: scenario.effect - createShader: LinearConvolveShadow_64[0m
+[Thu Aug 22 22:48:32 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.xiaomi.mipicks/com.xiaomi.downloader.service.DownloadService in 244428ms for start-requested[0m
+[Thu Aug 22 22:48:33 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity( 1967): View wasn't focused, requesting focus[0m
+[Thu Aug 22 22:48:33 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): [MON] Create device[0m
+[Thu Aug 22 22:48:33 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): [MON] Create device done, add done[0m
+[Thu Aug 22 22:48:33 WIB 2024][INFO] [SUB] [38;5;75mD/GraalActivity( 1967): onCreateInputConnection[0m
+[Thu Aug 22 22:48:33 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon( 1967): ATTACH_DALVIK, tid = 2233, existed? 1, dalvikEnv at 0xb400007523e0b100[0m
+[Thu Aug 22 22:48:33 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon( 1967): DETACH_DALVIK, tid = 2233, existed = 1, env at 0xb400007523e0b100[0m
+[Thu Aug 22 22:48:33 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon( 1967): ATTACH_DALVIK, tid = 2233, existed? 1, dalvikEnv at 0xb400007523e0b100[0m
+[Thu Aug 22 22:48:33 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon( 1967): DETACH_DALVIK, tid = 2233, existed = 1, env at 0xb400007523e0b100[0m
+[Thu Aug 22 22:48:33 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): don't add points, primary = -1[0m
+[Thu Aug 22 22:48:34 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): PPSRenderer: scenario.effect - createShader: LinearConvolve_16[0m
+[Thu Aug 22 22:48:34 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.miui.core/miui.autoinstall.config.service.AutoInstallService in 137712ms for start-requested[0m
+[Thu Aug 22 22:48:34 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): PPSRenderer: scenario.effect - createShader: LinearConvolve_20[0m
+[Thu Aug 22 22:48:34 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon( 1967): ATTACH_DALVIK, tid = 2233, existed? 1, dalvikEnv at 0xb400007523e0b100[0m
+[Thu Aug 22 22:48:34 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon( 1967): DETACH_DALVIK, tid = 2233, existed = 1, env at 0xb400007523e0b100[0m
+[Thu Aug 22 22:48:34 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): ES2ResourceFactory: Prism - createStockShader: FillCircle_Color.frag[0m
+[Thu Aug 22 22:48:34 WIB 2024][INFO] [SUB] [38;5;166mW/ActivityManager( 1714): Scheduling restart of crashed service com.google.android.apps.photos/.backup.apiservice.sdk.PhotosSdkBackupApiService in 54079ms for connection[0m
+[Thu Aug 22 22:48:35 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): don't add points, primary = -1[0m
+[Thu Aug 22 22:48:35 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): don't add points, primary = -1[0m
+[Thu Aug 22 22:48:36 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): don't add points, primary = -1[0m
+[Thu Aug 22 22:48:36 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled( 1967): don't add points, primary = -1[0m
+[Thu Aug 22 22:48:37 WIB 2024][FINE] Result for log: 130
+[Thu Aug 22 23:04:19 WIB 2024][INFO] ==================== LINK TASK ====================
+[Thu Aug 22 23:04:19 WIB 2024][FINE] Looking for resource: /native/android/c/dummy.c
+[Thu Aug 22 23:04:19 WIB 2024][FINE] Looking for resource: /native/android/c/launcher.c
+[Thu Aug 22 23:04:19 WIB 2024][FINE] Looking for resource: /native/android/c/javafx_adapter.c
+[Thu Aug 22 23:04:19 WIB 2024][FINE] Looking for resource: /native/android/c/touch_events.c
+[Thu Aug 22 23:04:19 WIB 2024][FINE] Looking for resource: /native/android/c/glibc_shim.c
+[Thu Aug 22 23:04:19 WIB 2024][FINE] Looking for resource: /native/android/c/attach_adapter.c
+[Thu Aug 22 23:04:19 WIB 2024][FINE] Looking for resource: /native/android/c/logger.c
+[Thu Aug 22 23:04:19 WIB 2024][FINE] Looking for resource: /native/android/c/grandroid.h
+[Thu Aug 22 23:04:19 WIB 2024][FINE] Looking for resource: /native/android/c/grandroid_ext.h
+[Thu Aug 22 23:04:19 WIB 2024][FINE] PB Command for compile-additional-sources: /home/user/Android/Ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -c -DSUBSTRATE -target aarch64-linux-android -I. -fPIC -DGVM_17 -I/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days dummy.c launcher.c javafx_adapter.c touch_events.c glibc_shim.c attach_adapter.c logger.c
+[Thu Aug 22 23:04:19 WIB 2024][FINE] Start process compile-additional-sources...
+[Thu Aug 22 23:04:19 WIB 2024][FINE] [SUB] launcher.c:49:12: warning: 'extern' variable has an initializer [-Wextern-initializer]
+[Thu Aug 22 23:04:19 WIB 2024][FINE] [SUB]    49 | extern int __svm_vm_is_static_binary __attribute__((weak)) = 1;
+[Thu Aug 22 23:04:19 WIB 2024][FINE] [SUB]       |            ^
+[Thu Aug 22 23:04:19 WIB 2024][FINE] [SUB] 1 warning generated.
+[Thu Aug 22 23:04:19 WIB 2024][FINE] [SUB] javafx_adapter.c:119:5: warning: incompatible pointer types passing 'void **' to parameter of type 'JNIEnv **' (aka 'const struct JNINativeInterface ***') [-Wincompatible-pointer-types]
+[Thu Aug 22 23:04:19 WIB 2024][FINE] [SUB]   119 |     ATTACH_DALVIK();
+[Thu Aug 22 23:04:19 WIB 2024][FINE] [SUB]       |     ^~~~~~~~~~~~~~~
+[Thu Aug 22 23:04:19 WIB 2024][FINE] [SUB] ./grandroid_ext.h:81:56: note: expanded from macro 'ATTACH_DALVIK'
+[Thu Aug 22 23:04:19 WIB 2024][FINE] [SUB]    81 |     (*dalvikVM)->AttachCurrentThreadAsDaemon(dalvikVM, (void **) &dalvikEnv, NULL); \
+[Thu Aug 22 23:04:19 WIB 2024][FINE] [SUB]       |                                                        ^~~~~~~~~~~~~~~~~~~~
+[Thu Aug 22 23:04:19 WIB 2024][FINE] [SUB] javafx_adapter.c:140:5: warning: incompatible pointer types passing 'void **' to parameter of type 'JNIEnv **' (aka 'const struct JNINativeInterface ***') [-Wincompatible-pointer-types]
+[Thu Aug 22 23:04:20 WIB 2024][FINE] [SUB]   140 |     ATTACH_DALVIK();
+[Thu Aug 22 23:04:20 WIB 2024][FINE] [SUB]       |     ^~~~~~~~~~~~~~~
+[Thu Aug 22 23:04:20 WIB 2024][FINE] [SUB] ./grandroid_ext.h:81:56: note: expanded from macro 'ATTACH_DALVIK'
+[Thu Aug 22 23:04:20 WIB 2024][FINE] [SUB]    81 |     (*dalvikVM)->AttachCurrentThreadAsDaemon(dalvikVM, (void **) &dalvikEnv, NULL); \
+[Thu Aug 22 23:04:20 WIB 2024][FINE] [SUB]       |                                                        ^~~~~~~~~~~~~~~~~~~~
+[Thu Aug 22 23:04:20 WIB 2024][FINE] [SUB] 2 warnings generated.
+[Thu Aug 22 23:04:20 WIB 2024][FINE] Result for compile-additional-sources: 0
+[Thu Aug 22 23:04:20 WIB 2024][FINE] PB Command for link: /home/user/Android/Ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/dummy.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/launcher.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/javafx_adapter.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/touch_events.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/glibc_shim.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/attach_adapter.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/logger.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/tmp/SVM-1724341764364/com.hyvercode.gluondays.main.o -ljava -lnio -lzip -lnet -lprefs -ljvm -lfdlibm -lz -ldl -lj2pkcs11 -ljaas -lextnet -target aarch64-linux-android21 -fPIC -Wl,--rosegment,--gc-sections,-z,noexecstack -shared -landroid -llog -lffi -llibchelper -static-libstdc++ -Wl,--whole-archive -lprism_es2_monocle -lglass_monocle -ljavafx_font_freetype -ljavafx_iio -Wl,--no-whole-archive -lGLESv2 -lEGL -lfreetype -o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/libMy Gluon Application Days.so -L/home/user/.gluon/substrate/javafxStaticSdk/21-ea+11.1/android-aarch64/sdk/lib -L/usr/lib/jvm/graalvm-svm-java17-linux-gluon-22.1.0.1-Final/lib/svm/clibraries/27/android-aarch64 -L/home/user/.gluon/substrate/javaStaticSdk/18-ea+prep18-9/android-aarch64/staticjdk/lib/static -L/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib -Wl,--whole-archive /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib/libdisplay.a /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib/liblifecycle.a /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib/libstatusbar.a /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib/libstorage.a /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib/libutil.a -Wl,--no-whole-archive
+[Thu Aug 22 23:04:20 WIB 2024][FINE] Start process link...
+[Thu Aug 22 23:04:21 WIB 2024][FINE] Result for link: 0
+[Thu Aug 22 23:04:21 WIB 2024][FINE] Logging process [link] to file: /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/log/process-link-1724342661891.log
+[Thu Aug 22 23:05:43 WIB 2024][INFO] ==================== RUN TASK ====================
+[Thu Aug 22 23:05:43 WIB 2024][FINE] PB Command for clearLog: /home/user/Android/Sdk/platform-tools/adb logcat -c
+[Thu Aug 22 23:05:43 WIB 2024][FINE] PB Command for run: /home/user/Android/Sdk/platform-tools/adb shell monkey -p com.hyvercode.gluondays 1
+[Thu Aug 22 23:05:43 WIB 2024][FINE] Start process clearLog...
+[Thu Aug 22 23:05:43 WIB 2024][FINE] Start process run...
+[Thu Aug 22 23:05:43 WIB 2024][FINE] [SUB]   bash arg: -p
+[Thu Aug 22 23:05:43 WIB 2024][FINE] [SUB]   bash arg: com.hyvercode.gluondays
+[Thu Aug 22 23:05:43 WIB 2024][FINE] [SUB]   bash arg: 1
+[Thu Aug 22 23:05:43 WIB 2024][FINE] Result for clearLog: 0
+[Thu Aug 22 23:05:43 WIB 2024][FINE] PB Command for log: /home/user/Android/Sdk/platform-tools/adb logcat -v brief -v color GraalCompiled:V GraalActivity:V GraalGluon:V GluonAttach:V AndroidRuntime:E ActivityManager:W *:S
+[Thu Aug 22 23:05:43 WIB 2024][FINE] Start process log...
+[Thu Aug 22 23:05:43 WIB 2024][INFO] [SUB] --------- beginning of kernel
+[Thu Aug 22 23:05:43 WIB 2024][INFO] [SUB] --------- beginning of main
+[Thu Aug 22 23:05:44 WIB 2024][FINE] [SUB] args: [-p, com.hyvercode.gluondays, 1]
+[Thu Aug 22 23:05:44 WIB 2024][FINE] [SUB]  arg: "-p"
+[Thu Aug 22 23:05:44 WIB 2024][FINE] [SUB]  arg: "com.hyvercode.gluondays"
+[Thu Aug 22 23:05:44 WIB 2024][FINE] [SUB]  arg: "1"
+[Thu Aug 22 23:05:44 WIB 2024][FINE] [SUB] data="com.hyvercode.gluondays"
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] --------- beginning of system
+[Thu Aug 22 23:05:44 WIB 2024][FINE] [SUB] Events injected: 1
+[Thu Aug 22 23:05:44 WIB 2024][FINE] [SUB] ## Network stats: elapsed time=66ms (0ms mobile, 0ms wifi, 66ms not connected)
+[Thu Aug 22 23:05:44 WIB 2024][FINE] Result for run: 0
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(12189): onCreate start, using Android Logging v1[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(12189): onCreate done[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(12189): onStart[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(12189): onStart done[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(12189): onResume[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(12189): onResume done[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(12189): surfaceCreated for com.gluonhq.helloandroid.MainActivity@9c3df4f[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(12189): loading substrate library[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(12189): AndroidVM called JNI_OnLoad, vm = 0xb4000075ba10d380, androidEnv = 0xb4000075ba1633c0[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(12189): loaded substrate library[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(12189): nativeSetSurface called, env at 0xb4000075ba1633c0 and size 8, surface at 0x7fee475c98[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(12189): native setSurface Ready, native window at 0xb4000074c9f12010[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(12189): metrics = DisplayMetrics{density=2.75, width=1080, height=2130, scaledDensity=2.75, xdpi=409.432, ydpi=409.903}, density = 2.75[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(12189): SurfaceReady, surface at 0x7fee475c78[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(12189): SurfaceReady, native window at 0xb4000074c9f12010[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(12189): Surface created, native code informed about it, nativeWindow at -5476376645278294000[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(12189): We will now launch Graal in a separate thread[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(12189): graalStarted true[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(12189): surfaceCreated done[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(12189): [MainActivity] surfaceChanged, format = 4, width = 1080, height = 2130[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(12189): nativeSetSurface called, env at 0xb4000075ba1633c0 and size 8, surface at 0x7fee475ca8[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(12189): native setSurface Ready, native window at 0xb4000074c9f12010[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(12189): surfaceChanged done, metrics = DisplayMetrics{density=2.75, width=1080, height=2130, scaledDensity=2.75, xdpi=409.432, ydpi=409.903}, density = 2.75[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(12189): SurfaceRedraw needed: ask native graal layer to redraw surface[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(12189): launcher, nativeSurfaceRedrawNeeded called. Invoke method on glass_monocle[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(12189): surfaceredraw needed part 1 done[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(12189): Start GraalApp, DALVIK env at 0xb4000074c9f08300[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(12189): PAGESIZE = 4096[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(12189): EnvVersion = 65542[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(12189): calling JavaMainWrapper_run with argsize: 23[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): Aug 22, 2024 11:05:44 PM com.sun.javafx.application.PlatformImpl startup[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): WARNING: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @71c7db30'[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): Prism pipeline init order: es2 [0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): Using Double Precision Marlin Rasterizer[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): Using dirty region optimizations[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): Using system sized mask for primitives[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): Not forcing power of 2 sizes for textures[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): Using hardware CLAMP_TO_ZERO mode[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): Opting in for HiDPI pixel scaling[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): Prism pipeline name = com.sun.prism.es2.ES2Pipeline[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): Loading ES2 native library ... prism_es2_monocle[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): 	succeeded.[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): GLFactory using com.sun.prism.es2.MonocleGLFactory[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): In JNI_OnLoad_glass)monocle[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): (X) Got class = class com.sun.prism.es2.ES2Pipeline[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): Initialized prism pipeline: com.sun.prism.es2.ES2Pipeline[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): Maximum supported texture size: 16384[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): Maximum texture size clamped to 4096[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): Non power of two texture support = true[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): Maximum number of vertex attributes = 16[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): Maximum number of uniform vertex components = 1024[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): Maximum number of uniform fragment components = 1024[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): Maximum number of varying components = 124[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): Maximum number of texture units usable in a vertex shader = 16[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): Maximum number of texture units usable in a fragment shader = 16[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): Graphics Vendor: Qualcomm[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189):        Renderer: Adreno (TM) 610[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189):         Version: OpenGL ES 3.2 V@0502.0 (GIT@03e27f8, I326e6aff90, 1604374052) (Date:11/02/20)[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189):  vsync: true vpipe: true[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(12189): Initializing native Util from OnLoad[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(12189): Init Util[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(12189): ATTACH_DALVIK, tid = 12221, existed? 0, dalvikEnv at 0xb400007523e07c80[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(12189): Util :: Load className com/gluonhq/helloandroid/Util[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(12189): ATTACH_DALVIK, tid = 12221, existed? 1, dalvikEnv at 0xb400007523e07c80[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;231mV/GluonAttach(12189): Util <init>[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(12189): DETACH_DALVIK, tid = 12221, existed = 1, env at 0xb400007523e07c80[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(12189): Dalvik Util init was called[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(12189): In dummy JNI_OnLoad_javafx_font[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;40mI/GluonAttach(12189): JNI_OnLoad_display called[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(12189): [Display Service] Initializing native Display from OnLoad[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(12189): ATTACH_DALVIK, tid = 12225, existed? 0, dalvikEnv at 0xb400007523e07dc0[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(12189): Util :: Load className com/gluonhq/helloandroid/DalvikDisplayService[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(12189): ATTACH_DALVIK, tid = 12225, existed? 1, dalvikEnv at 0xb400007523e07dc0[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(12189): DETACH_DALVIK, tid = 12225, existed = 1, env at 0xb400007523e07dc0[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(12189): ATTACH_DALVIK, tid = 12225, existed? 1, dalvikEnv at 0xb400007523e07dc0[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(12189): DETACH_DALVIK, tid = 12225, existed = 1, env at 0xb400007523e07dc0[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;40mI/GluonAttach(12189): JNI_OnLoad_storage called[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(12189): [Storage Service] Initializing native Storage from OnLoad[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(12189): ATTACH_DALVIK, tid = 12225, existed? 1, dalvikEnv at 0xb400007523e07dc0[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GluonAttach(12189): Util :: Load className com/gluonhq/helloandroid/DalvikStorageService[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(12189): ATTACH_DALVIK, tid = 12225, existed? 1, dalvikEnv at 0xb400007523e07dc0[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(12189): DETACH_DALVIK, tid = 12225, existed = 1, env at 0xb400007523e07dc0[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): File not found: /system/etc/system_fonts.xml[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;196mE/GraalGluon(12189): launcher, nativeSurfaceRedrawNeeded called. Invoke method on glass_monocle[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(12189): surfaceredraw needed (and wait) done[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(12189): ATTACH_GRAAL, tid = 12189, existed? 1, graalEnv at 0xb4000074ba64b900[0m
+[Thu Aug 22 23:05:44 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(12189): DETACH_GRAAL, tid = 12189, graalVM = 0x74c6b85cc8, existed = 1, env at 0xb4000074ba64b900[0m
+[Thu Aug 22 23:05:45 WIB 2024][INFO] [SUB] [38;5;231mV/GraalActivity(12189): View wasn't focused, requesting focus[0m
+[Thu Aug 22 23:05:45 WIB 2024][INFO] [SUB] [38;5;75mD/GraalActivity(12189): onCreateInputConnection[0m
+[Thu Aug 22 23:05:45 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): don't add points, primary = -1[0m
+[Thu Aug 22 23:05:45 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): [MON] Create device[0m
+[Thu Aug 22 23:05:45 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): [MON] Create device done, add done[0m
+[Thu Aug 22 23:05:45 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(12189): ATTACH_DALVIK, tid = 12225, existed? 1, dalvikEnv at 0xb400007523e07dc0[0m
+[Thu Aug 22 23:05:45 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(12189): DETACH_DALVIK, tid = 12225, existed = 1, env at 0xb400007523e07dc0[0m
+[Thu Aug 22 23:05:45 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): max rectangle texture cell size = 89[0m
+[Thu Aug 22 23:05:45 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): wrap rectangle texture = 2 x 2[0m
+[Thu Aug 22 23:05:45 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): ES2ResourceFactory: Prism - createStockShader: AlphaTexture_Color.frag[0m
+[Thu Aug 22 23:05:45 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): ES2ResourceFactory: Prism - createStockShader: Texture_Color.frag[0m
+[Thu Aug 22 23:05:45 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): PPSRenderer: scenario.effect - createShader: LinearConvolveShadow_20[0m
+[Thu Aug 22 23:05:45 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): ES2ResourceFactory: Prism - createStockShader: Solid_TextureRGB.frag[0m
+[Thu Aug 22 23:05:45 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): ES2ResourceFactory: Prism - createStockShader: FillRoundRect_Color.frag[0m
+[Thu Aug 22 23:05:45 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): PPSRenderer: scenario.effect - createShader: LinearConvolveShadow_28[0m
+[Thu Aug 22 23:05:45 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(12189): ATTACH_DALVIK, tid = 12225, existed? 1, dalvikEnv at 0xb400007523e07dc0[0m
+[Thu Aug 22 23:05:45 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(12189): DETACH_DALVIK, tid = 12225, existed = 1, env at 0xb400007523e07dc0[0m
+[Thu Aug 22 23:05:45 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): PPSRenderer: scenario.effect - createShader: LinearConvolveShadow_64[0m
+[Thu Aug 22 23:05:46 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(12189): ATTACH_DALVIK, tid = 12225, existed? 1, dalvikEnv at 0xb400007523e07dc0[0m
+[Thu Aug 22 23:05:46 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(12189): DETACH_DALVIK, tid = 12225, existed = 1, env at 0xb400007523e07dc0[0m
+[Thu Aug 22 23:05:46 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(12189): ATTACH_DALVIK, tid = 12225, existed? 1, dalvikEnv at 0xb400007523e07dc0[0m
+[Thu Aug 22 23:05:46 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(12189): DETACH_DALVIK, tid = 12225, existed = 1, env at 0xb400007523e07dc0[0m
+[Thu Aug 22 23:05:47 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): don't add points, primary = -1[0m
+[Thu Aug 22 23:05:47 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): PPSRenderer: scenario.effect - createShader: LinearConvolve_16[0m
+[Thu Aug 22 23:05:47 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): PPSRenderer: scenario.effect - createShader: LinearConvolve_20[0m
+[Thu Aug 22 23:05:47 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(12189): ATTACH_DALVIK, tid = 12225, existed? 1, dalvikEnv at 0xb400007523e07dc0[0m
+[Thu Aug 22 23:05:47 WIB 2024][INFO] [SUB] [38;5;75mD/GraalGluon(12189): DETACH_DALVIK, tid = 12225, existed = 1, env at 0xb400007523e07dc0[0m
+[Thu Aug 22 23:05:47 WIB 2024][INFO] [SUB] [38;5;75mD/GraalCompiled(12189): ES2ResourceFactory: Prism - createStockShader: FillCircle_Color.frag[0m
+[Thu Aug 22 23:05:50 WIB 2024][FINE] Result for log: 130
+[Thu Aug 22 23:05:50 WIB 2024][SEVERE] Process log failed with result: 130
+Check the log files under /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/log
+And please check https://docs.gluonhq.com/ for more information.
+[Thu Aug 22 23:08:24 WIB 2024][INFO] ==================== INSTALL TASK ====================
+[Thu Aug 22 23:08:24 WIB 2024][FINE] PB Command for install-task: /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/android_project/gradlew -p /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/android_project installDebug
+[Thu Aug 22 23:08:24 WIB 2024][FINE] Start process install-task...
+[Thu Aug 22 23:08:26 WIB 2024][FINE] [SUB] To honour the JVM settings for this build a single-use Daemon process will be forked. See https://docs.gradle.org/7.5/userguide/gradle_daemon.html#sec:disabling_the_daemon.
+[Thu Aug 22 23:08:29 WIB 2024][FINE] [SUB] Daemon will be stopped at the end of the build 
+[Thu Aug 22 23:08:50 WIB 2024][FINE] [SUB] Warning: This version only understands SDK XML versions up to 3 but an SDK XML file of version 4 was encountered. This can happen if you use versions of Android Studio and the command-line tools that were released at different times.
+[Thu Aug 22 23:08:52 WIB 2024][FINE] [SUB] > Task :app:preBuild UP-TO-DATE
+[Thu Aug 22 23:08:52 WIB 2024][FINE] [SUB] > Task :app:preDebugBuild UP-TO-DATE
+[Thu Aug 22 23:08:52 WIB 2024][FINE] [SUB] > Task :app:compileDebugAidl NO-SOURCE
+[Thu Aug 22 23:08:52 WIB 2024][FINE] [SUB] > Task :app:compileDebugRenderscript NO-SOURCE
+[Thu Aug 22 23:08:53 WIB 2024][FINE] [SUB] > Task :app:generateDebugBuildConfig UP-TO-DATE
+[Thu Aug 22 23:08:53 WIB 2024][FINE] [SUB] > Task :app:javaPreCompileDebug UP-TO-DATE
+[Thu Aug 22 23:08:54 WIB 2024][FINE] [SUB] > Task :app:checkDebugAarMetadata UP-TO-DATE
+[Thu Aug 22 23:08:54 WIB 2024][FINE] [SUB] > Task :app:generateDebugResValues UP-TO-DATE
+[Thu Aug 22 23:08:54 WIB 2024][FINE] [SUB] > Task :app:mapDebugSourceSetPaths UP-TO-DATE
+[Thu Aug 22 23:08:54 WIB 2024][FINE] [SUB] > Task :app:generateDebugResources UP-TO-DATE
+[Thu Aug 22 23:08:54 WIB 2024][FINE] [SUB] > Task :app:mergeDebugResources UP-TO-DATE
+[Thu Aug 22 23:08:54 WIB 2024][FINE] [SUB] > Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+[Thu Aug 22 23:08:54 WIB 2024][FINE] [SUB] > Task :app:extractDeepLinksDebug UP-TO-DATE
+[Thu Aug 22 23:08:55 WIB 2024][FINE] [SUB] > Task :app:processDebugMainManifest UP-TO-DATE
+[Thu Aug 22 23:08:55 WIB 2024][FINE] [SUB] > Task :app:processDebugManifest UP-TO-DATE
+[Thu Aug 22 23:08:55 WIB 2024][FINE] [SUB] > Task :app:processDebugManifestForPackage UP-TO-DATE
+[Thu Aug 22 23:08:55 WIB 2024][FINE] [SUB] > Task :app:processDebugResources UP-TO-DATE
+[Thu Aug 22 23:08:55 WIB 2024][FINE] [SUB] > Task :app:compileDebugJavaWithJavac UP-TO-DATE
+[Thu Aug 22 23:08:55 WIB 2024][FINE] [SUB] > Task :app:mergeDebugShaders UP-TO-DATE
+[Thu Aug 22 23:08:55 WIB 2024][FINE] [SUB] > Task :app:compileDebugShaders NO-SOURCE
+[Thu Aug 22 23:08:55 WIB 2024][FINE] [SUB] > Task :app:generateDebugAssets UP-TO-DATE
+[Thu Aug 22 23:08:56 WIB 2024][FINE] [SUB] > Task :app:mergeDebugAssets UP-TO-DATE
+[Thu Aug 22 23:08:56 WIB 2024][FINE] [SUB] > Task :app:compressDebugAssets UP-TO-DATE
+[Thu Aug 22 23:08:56 WIB 2024][FINE] [SUB] > Task :app:processDebugJavaRes NO-SOURCE
+[Thu Aug 22 23:08:56 WIB 2024][FINE] [SUB] > Task :app:mergeDebugJavaResource UP-TO-DATE
+[Thu Aug 22 23:08:56 WIB 2024][FINE] [SUB] > Task :app:checkDebugDuplicateClasses UP-TO-DATE
+[Thu Aug 22 23:08:56 WIB 2024][FINE] [SUB] > Task :app:desugarDebugFileDependencies UP-TO-DATE
+[Thu Aug 22 23:08:57 WIB 2024][FINE] [SUB] > Task :app:mergeExtDexDebug UP-TO-DATE
+[Thu Aug 22 23:08:57 WIB 2024][FINE] [SUB] > Task :app:mergeLibDexDebug UP-TO-DATE
+[Thu Aug 22 23:08:57 WIB 2024][FINE] [SUB] > Task :app:dexBuilderDebug UP-TO-DATE
+[Thu Aug 22 23:08:57 WIB 2024][FINE] [SUB] > Task :app:mergeProjectDexDebug UP-TO-DATE
+[Thu Aug 22 23:08:57 WIB 2024][FINE] [SUB] > Task :app:mergeDebugJniLibFolders UP-TO-DATE
+[Thu Aug 22 23:08:57 WIB 2024][FINE] [SUB] > Task :app:mergeDebugNativeLibs UP-TO-DATE
+[Thu Aug 22 23:08:57 WIB 2024][FINE] [SUB] > Task :app:stripDebugDebugSymbols UP-TO-DATE
+[Thu Aug 22 23:08:57 WIB 2024][FINE] [SUB] > Task :app:validateSigningDebug UP-TO-DATE
+[Thu Aug 22 23:08:57 WIB 2024][FINE] [SUB] > Task :app:writeDebugAppMetadata UP-TO-DATE
+[Thu Aug 22 23:08:57 WIB 2024][FINE] [SUB] > Task :app:writeDebugSigningConfigVersions UP-TO-DATE
+[Thu Aug 22 23:08:57 WIB 2024][FINE] [SUB] > Task :app:packageDebug UP-TO-DATE
+[Thu Aug 22 23:08:57 WIB 2024][FINE] [SUB] > Task :app:createDebugApkListingFileRedirect UP-TO-DATE
+[Thu Aug 22 23:09:00 WIB 2024][FINE] [SUB] 
+[Thu Aug 22 23:09:00 WIB 2024][FINE] [SUB] > Task :app:installDebug
+[Thu Aug 22 23:09:00 WIB 2024][FINE] [SUB] Installing APK 'app-debug.apk' on 'Redmi Note 8 - 11' for :app:debug
+[Thu Aug 22 23:09:33 WIB 2024][FINE] [SUB] Installed on 1 device.
+[Thu Aug 22 23:09:33 WIB 2024][FINE] [SUB] 
+[Thu Aug 22 23:09:33 WIB 2024][FINE] [SUB] BUILD SUCCESSFUL in 1m 9s
+[Thu Aug 22 23:09:33 WIB 2024][FINE] [SUB] 32 actionable tasks: 1 executed, 31 up-to-date
+[Thu Aug 22 23:09:33 WIB 2024][FINE] Result for install-task: 0
+[Thu Aug 22 23:09:34 WIB 2024][FINE] PB Command for check version: /usr/lib/jvm/graalvm-svm-java17-linux-gluon-22.1.0.1-Final/bin/java -version
+[Thu Aug 22 23:09:34 WIB 2024][FINE] Start process check version...
+[Thu Aug 22 23:09:34 WIB 2024][FINE] [SUB] openjdk version "17.0.3" 2022-04-19
+[Thu Aug 22 23:09:34 WIB 2024][FINE] [SUB] OpenJDK Runtime Environment GraalVM 22.1.0.1 (build 17.0.3+7-jvmci-22.1-b06)
+[Thu Aug 22 23:09:34 WIB 2024][FINE] [SUB] OpenJDK 64-Bit Server VM GraalVM 22.1.0.1 (build 17.0.3+7-jvmci-22.1-b06, mixed mode, sharing)
+[Thu Aug 22 23:09:34 WIB 2024][FINE] Result for check version: 0

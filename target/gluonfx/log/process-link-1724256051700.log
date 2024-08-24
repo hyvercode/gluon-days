@@ -1,0 +1,15 @@
+Process
+=======
+link
+
+Command Line
+============
+/home/user/.gluon/substrate/Android/ndk/25.2.9519653/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/dummy.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/launcher.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/javafx_adapter.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/touch_events.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/glibc_shim.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/attach_adapter.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/My Gluon Application Days/logger.o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/tmp/SVM-1724255375841/com.hyvercode.gluondays.main.o -ljava -lnio -lzip -lnet -lprefs -ljvm -lfdlibm -lz -ldl -lj2pkcs11 -ljaas -lextnet -target aarch64-linux-android21 -fPIC -Wl,--rosegment,--gc-sections,-z,noexecstack -shared -landroid -llog -lffi -llibchelper -static-libstdc++ -Wl,--whole-archive -lprism_es2_monocle -lglass_monocle -ljavafx_font_freetype -ljavafx_iio -Wl,--no-whole-archive -lGLESv2 -lEGL -lfreetype -o /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/libMy Gluon Application Days.so -L/home/user/.gluon/substrate/javafxStaticSdk/21-ea+11.1/android-aarch64/sdk/lib -L/usr/lib/jvm/graalvm-svm-java17-linux-gluon-22.1.0.1-Final/lib/svm/clibraries/27/android-aarch64 -L/home/user/.gluon/substrate/javaStaticSdk/18-ea+prep18-9/android-aarch64/staticjdk/lib/static -L/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib -Wl,--whole-archive /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib/libdisplay.a /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib/liblifecycle.a /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib/libstatusbar.a /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib/libstorage.a /mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/lib/libutil.a -Wl,--no-whole-archive
+
+Output
+======
+
+
+Result
+======
+result: 0

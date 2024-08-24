@@ -1,0 +1,65 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.hyvercode.gluondays"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/AndroidManifest.xml
+10
+11    <supports-screens android:xlargeScreens="true" />
+11-->/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/AndroidManifest.xml:3:5-53
+11-->/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/AndroidManifest.xml:3:23-51
+12
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/AndroidManifest.xml:4:5-66
+13-->/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/AndroidManifest.xml:4:22-64
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->[Storage.aar] /home/user/.gradle/caches/transforms-3/93c1027a0509c99d6e8a682091270e14/transformed/jetified-Storage/AndroidManifest.xml:10:5-80
+14-->[Storage.aar] /home/user/.gradle/caches/transforms-3/93c1027a0509c99d6e8a682091270e14/transformed/jetified-Storage/AndroidManifest.xml:10:22-77
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->[Storage.aar] /home/user/.gradle/caches/transforms-3/93c1027a0509c99d6e8a682091270e14/transformed/jetified-Storage/AndroidManifest.xml:11:5-81
+15-->[Storage.aar] /home/user/.gradle/caches/transforms-3/93c1027a0509c99d6e8a682091270e14/transformed/jetified-Storage/AndroidManifest.xml:11:22-78
+16
+17    <application
+17-->/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/AndroidManifest.xml:6:5-17:19
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.0.0] /home/user/.gradle/caches/transforms-3/38b0a36486109358234ef8e0f4c9a704/transformed/core-1.0.0/AndroidManifest.xml:22:18-86
+19        android:debuggable="true"
+20        android:icon="@mipmap/ic_launcher"
+20-->/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/AndroidManifest.xml:6:60-94
+21        android:label="My Gluon Application Days"
+21-->/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/AndroidManifest.xml:6:18-59
+22        android:requestLegacyExternalStorage="true" >
+22-->[Storage.aar] /home/user/.gradle/caches/transforms-3/93c1027a0509c99d6e8a682091270e14/transformed/jetified-Storage/AndroidManifest.xml:13:18-61
+23        <activity
+23-->/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/AndroidManifest.xml:7:9-14:20
+24            android:name="com.gluonhq.helloandroid.MainActivity"
+24-->/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/AndroidManifest.xml:7:19-71
+25            android:configChanges="orientation|keyboardHidden"
+25-->/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/AndroidManifest.xml:9:19-69
+26            android:exported="true" >
+26-->/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/AndroidManifest.xml:8:19-42
+27            <intent-filter>
+27-->/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/AndroidManifest.xml:10:14-13:30
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/AndroidManifest.xml:11:17-76
+28-->/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/AndroidManifest.xml:11:27-74
+29
+30                <action android:name="android.intent.action.MAIN" />
+30-->/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/AndroidManifest.xml:12:17-68
+30-->/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/AndroidManifest.xml:12:25-66
+31            </intent-filter>
+32        </activity>
+33        <activity
+33-->/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/AndroidManifest.xml:15:9-16:44
+34            android:name="com.gluonhq.helloandroid.PermissionRequestActivity"
+34-->/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/AndroidManifest.xml:15:19-84
+35            android:exported="true" />
+35-->/mnt/2107E4E97E4688B5/Ngoprek/gluon-days/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/AndroidManifest.xml:16:19-42
+36    </application>
+37
+38</manifest>
