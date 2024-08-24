@@ -6,9 +6,7 @@ import com.gluonhq.charm.glisten.mvc.View;
 import com.gluonhq.charm.glisten.visual.MaterialDesignIcon;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
-import lombok.extern.log4j.Log4j;
 
-@Log4j
 public class MainPresenter {
 
     @FXML
